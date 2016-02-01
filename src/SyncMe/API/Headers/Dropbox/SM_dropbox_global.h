@@ -1,6 +1,8 @@
 #ifndef SM_DROPBOX_GLOBAL_H
 #define SM_DROPBOX_GLOBAL_H
 
+//Header de variables globales
+
 #include <QtCore/qglobal.h>
 
 #if defined(SM_DROPBOX_LIBRARY)
