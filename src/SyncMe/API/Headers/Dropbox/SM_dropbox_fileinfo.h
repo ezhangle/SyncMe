@@ -1,0 +1,6 @@
+#ifndef SM_DROPBOXFILEINFO_H
+#define SM_DROPBOXFILEINFO_H
+
+#include <QObject>
+
+#endif // SM_DROPBOXFILEINFO_H
