@@ -1,6 +1,5 @@
 ---- DROPBOX API PART ----
 Finish Headers for:
-- File
 - QDropbox
 
 Finish Sources for:
@@ -24,4 +23,6 @@ Finish Sources for:
 
 * Finished this day:
 - Header for SM_Dropbox_Json
+- Header for SM_Dropbox_DeltaResponse
 - Header for SM_Dropbox_FileInfo
+- Header for SM_Dropbox_File
