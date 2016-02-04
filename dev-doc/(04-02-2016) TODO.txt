@@ -1,6 +1,5 @@
 ---- DROPBOX API PART ----
 Finish Headers for:
-- Deltaresponse
 - File
 - Fileinfo
 - QDropbox
@@ -20,3 +19,10 @@ Finish Sources for:
 
 ---- INTERNAL SYSTEMS ----
 - Encryption System for Login data (when using network transfer)
+
+
+------------------------------------------------------------------------------
+
+* Finished this day:
+- Header for SM_Dropbox_Json
+- Header for SM_Dropbox_FileInfo
