@@ -1,8 +1,6 @@
 ---- DROPBOX API PART ----
 Finish Headers for:
-- Deltaresponse
 - File
-- Fileinfo
 - QDropbox
 
 Finish Sources for:
