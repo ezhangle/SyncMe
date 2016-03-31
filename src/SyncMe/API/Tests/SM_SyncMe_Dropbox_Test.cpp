@@ -290,10 +290,10 @@ void SM_SyncMe_Dropbox_Test::authorizeApplication(SM_QDropbox* d)
 }
 
 /**
- * @brief Connect a SM_QDropbox to the Dropbox service
- * @param d SM_QDropbox object to be connected
- * @param m Authentication Method
- * @return <code>true</code> on success
+ * Conecta un SM_QDropbox al servicio de Dropbox
+ * @param d Objeto SM_QDropbox a conectar
+ * @param m Metodo de autenticacion
+ * @return <code>true</code> en caso de ser satisfactorio
  */
 bool SM_SyncMe_Dropbox_Test::connectDropbox(SM_QDropbox *d, SM_QDropbox::OAuthMethod m)
 {
