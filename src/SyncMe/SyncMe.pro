@@ -16,7 +16,8 @@ CONFIG += C++11
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    API/Sources/Dropbox/SM_qdropbox.cpp
+    API/Sources/Dropbox/SM_qdropbox.cpp \
+    API/Sources/Dropbox/SM_qdropbox_account.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
