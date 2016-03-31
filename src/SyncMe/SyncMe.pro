@@ -42,7 +42,8 @@ HEADERS  += mainwindow.h \
     SM_CheckUI.h \
     SM_FilesTransferUI.h \
     SM_FilesUI.h \
-    SM_FoldersUI.h
+    SM_FoldersUI.h \
+    SM_ItemInfo.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
