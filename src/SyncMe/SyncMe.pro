@@ -33,7 +33,8 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Network/SM_FoldersManager.cpp \
     API/Sources/GDrive/Network/SM_NetworkManager.cpp \
     API/Sources/GDrive/Network/SM_OperationsManager.cpp \
-    API/Sources/GDrive/Network/SM_Queries.cpp
+    API/Sources/GDrive/Network/SM_Queries.cpp \
+    API/Sources/GDrive/Network/SM_ResManager.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
