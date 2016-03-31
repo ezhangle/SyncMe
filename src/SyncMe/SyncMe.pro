@@ -14,8 +14,7 @@ TEMPLATE = app
 CONFIG += C++11
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
+SOURCES +=\
     API/Sources/Dropbox/SM_qdropbox.cpp \
     API/Sources/Dropbox/SM_dropbox_account.cpp \
     API/Sources/Dropbox/SM_dropbox_deltaresponse.cpp \
@@ -24,7 +23,7 @@ SOURCES += main.cpp\
     API/Sources/Dropbox/SM_dropbox_json.cpp \
     API/Tests/SM_SyncMe_Dropbox_Test.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     API/Headers/Dropbox/SM_dropbox.h \
     API/Headers/Dropbox/SM_dropbox_global.h \
     API/Headers/Dropbox/SM_dropbox_account.h \
