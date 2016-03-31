@@ -70,7 +70,8 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/Network/SM_ResManager.h \
     API/Headers/GDrive/Network/SM_UploadManager.h \
     API/Headers/GDrive/Parsers/SM_JSONParser.h \
-    API/Headers/GDrive/Parsers/SM_XMLHandler.h
+    API/Headers/GDrive/Parsers/SM_XMLHandler.h \
+    API/Headers/GDrive/Parsers/SM_XMLParser.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
