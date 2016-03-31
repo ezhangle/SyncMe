@@ -37,7 +37,8 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Network/SM_ResManager.cpp \
     API/Sources/GDrive/Network/SM_UploadManager.cpp \
     API/Sources/GDrive/Parsers/SM_JSONParser.cpp \
-    API/Sources/GDrive/Parsers/SM_XMLHandler.cpp
+    API/Sources/GDrive/Parsers/SM_XMLHandler.cpp \
+    API/Sources/GDrive/Parsers/SM_XMLParser.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
