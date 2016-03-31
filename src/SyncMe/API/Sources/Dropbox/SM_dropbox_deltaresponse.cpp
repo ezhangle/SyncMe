@@ -1,5 +1,5 @@
-#include "SM_dropbox_deltaresponse.h"
-#include "SM_dropbox_json.h"
+#include "../../Headers/Dropbox/SM_dropbox_deltaresponse.h"
+#include "../../Headers/Dropbox/SM_dropbox_json.h"
 
 SM_Dropbox_DeltaResponse::SM_Dropbox_DeltaResponse()
 {

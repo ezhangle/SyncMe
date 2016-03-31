@@ -1,4 +1,4 @@
-#include "SM_dropbox_account.h"
+#include "../../Headers/Dropbox/SM_dropbox_account.h"
 
 SM_Dropbox_Account::SM_Dropbox_Account(QObject *parent) :
     SM_Dropbox_Json(parent)
