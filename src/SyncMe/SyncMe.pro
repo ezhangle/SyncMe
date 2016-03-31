@@ -76,7 +76,8 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/Parsers/SM_XMLHandler.h \
     API/Headers/GDrive/Parsers/SM_XMLParser.h \
     API/Headers/GDrive/Settings/SM_AccountInfo.h \
-    API/Headers/GDrive/Settings/SM_SettingsManager.h
+    API/Headers/GDrive/Settings/SM_SettingsManager.h \
+    API/Headers/GDrive/Share/SM_CommonTools.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
