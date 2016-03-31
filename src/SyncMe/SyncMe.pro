@@ -40,4 +40,5 @@ FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/CreateFolderDialog.ui \
     API/Headers/GDrive/GUI/Forms/DriveTree.ui \
     API/Headers/GDrive/GUI/Forms/FilePanel.ui \
-    API/Headers/GDrive/GUI/Forms/MainWindow.ui
+    API/Headers/GDrive/GUI/Forms/MainWindow.ui \
+    API/Headers/GDrive/GUI/Forms/ProgressBarDialog.ui
