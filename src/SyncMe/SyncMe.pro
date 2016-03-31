@@ -39,7 +39,8 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/GUI/Controls/SM_ToolBar.h \
     SM_AdditionalFolderManager.h \
     SM_CheckUI.h \
-    SM_FilesTransferUI.h
+    SM_FilesTransferUI.h \
+    SM_FilesUI.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
