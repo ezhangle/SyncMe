@@ -84,3 +84,6 @@ FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/ProgressBarDialog.ui \
     API/Headers/GDrive/GUI/Forms/SettingsDialog.ui \
     API/Headers/GDrive/GUI/Forms/ShareDialog.ui
+
+OTHER_FILES += \
+    API/Headers/GDrive/Images/PLACEHOLDER
