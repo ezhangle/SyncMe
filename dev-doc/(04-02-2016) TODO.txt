@@ -1,0 +1,28 @@
+---- DROPBOX API PART ----
+Finish Headers for:
+- QDropbox
+
+Finish Sources for:
+- Account
+- Deltaresponse
+- File
+- Fileinfo
+- Json
+- QDropbox
+
+
+---- GUI PART ----
+- Initial Login/Config Screen draft
+
+
+---- INTERNAL SYSTEMS ----
+- Encryption System for Login data (when using network transfer)
+
+
+------------------------------------------------------------------------------
+
+* Finished this day:
+- Header for SM_Dropbox_Json
+- Header for SM_Dropbox_DeltaResponse
+- Header for SM_Dropbox_FileInfo
+- Header for SM_Dropbox_File
