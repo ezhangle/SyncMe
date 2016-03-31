@@ -30,6 +30,7 @@ HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox_json.h \
     API/Headers/Dropbox/SM_qdropbox.h \
     API/Headers/GDrive/Core/SM_DriveEngine.h \
-    API/Headers/GDrive/Core/SM_EventHandler.h
+    API/Headers/GDrive/Core/SM_EventHandler.h \
+    API/Headers/GDrive/GUI/Controls/SM_ComboBox.h
 
 FORMS    += mainwindow.ui
