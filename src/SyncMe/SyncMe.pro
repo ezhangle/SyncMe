@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Core/main.cpp \
     SM_AccountsManager.cpp \
     SM_CheckUI.cpp \
-    SM_FilesTransferUI.cpp
+    SM_FilesTransferUI.cpp \
+    SM_FilesUI.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
