@@ -35,7 +35,8 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Network/SM_OperationsManager.cpp \
     API/Sources/GDrive/Network/SM_Queries.cpp \
     API/Sources/GDrive/Network/SM_ResManager.cpp \
-    API/Sources/GDrive/Network/SM_UploadManager.cpp
+    API/Sources/GDrive/Network/SM_UploadManager.cpp \
+    API/Sources/GDrive/Parsers/SM_JSONParser.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
@@ -66,7 +67,9 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/Network/SM_OperationsManager.h \
     API/Headers/GDrive/Network/SM_Queries.h \
     API/Headers/GDrive/Network/SM_ResManager.h \
-    API/Headers/GDrive/Network/SM_UploadManager.h
+    API/Headers/GDrive/Network/SM_UploadManager.h \
+    API/Headers/GDrive/Parsers/SM_JSONParser.h \
+    API/Headers/GDrive/Parsers/SM_XMLHandler.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
