@@ -41,7 +41,13 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Parsers/SM_XMLParser.cpp \
     API/Sources/GDrive/Settings/SM_AccountInfo.cpp \
     API/Sources/GDrive/Settings/SM_SettingsManager.cpp \
-    API/Sources/GDrive/Share/SM_CommonTools.cpp
+    API/Sources/GDrive/Share/SM_CommonTools.cpp \
+    API/Sources/Dropbox/SM_dropbox_account.cpp \
+    API/Sources/Dropbox/SM_dropbox_deltaresponse.cpp \
+    API/Sources/Dropbox/SM_dropbox_file.cpp \
+    API/Sources/Dropbox/SM_dropbox_fileinfo.cpp \
+    API/Sources/Dropbox/SM_dropbox_json.cpp \
+    API/Tests/qtdropboxtest.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
@@ -83,7 +89,17 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/Share/SM_Defs.h \
     API/Headers/GDrive/Share/SM_Enums.h \
     API/Headers/GDrive/Share/SM_Registration.h \
-    API/Headers/GDrive/Share/SM_Singleton.h
+    API/Headers/GDrive/Share/SM_Singleton.h \
+    API/Headers/Dropbox/SM_dropbox.h \
+    API/Headers/Dropbox/SM_dropbox_account.h \
+    API/Headers/Dropbox/SM_dropbox_deltaresponse.h \
+    API/Headers/Dropbox/SM_dropbox_file.h \
+    API/Headers/Dropbox/SM_dropbox_fileinfo.h \
+    API/Headers/Dropbox/SM_dropbox_global.h \
+    API/Headers/Dropbox/SM_dropbox_json.h \
+    API/Headers/Dropbox/SM_qdropbox.h \
+    API/Tests/keys.hpp \
+    API/Tests/qtdropboxtest.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
