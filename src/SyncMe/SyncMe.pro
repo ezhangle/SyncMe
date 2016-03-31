@@ -35,4 +35,5 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/GUI/Controls/SM_ToolBar.h
 
 FORMS    += mainwindow.ui \
-    API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui
+    API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
+    API/Headers/GDrive/GUI/Forms/AuthDialog.ui
