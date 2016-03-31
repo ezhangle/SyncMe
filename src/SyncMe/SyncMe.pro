@@ -40,7 +40,8 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Parsers/SM_XMLHandler.cpp \
     API/Sources/GDrive/Parsers/SM_XMLParser.cpp \
     API/Sources/GDrive/Settings/SM_AccountInfo.cpp \
-    API/Sources/GDrive/Settings/SM_SettingsManager.cpp
+    API/Sources/GDrive/Settings/SM_SettingsManager.cpp \
+    API/Sources/GDrive/Share/SM_CommonTools.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
