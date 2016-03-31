@@ -36,4 +36,5 @@ HEADERS  += \
     API/Tests/SM_Dropbox_Keys_Data.h
 
 FORMS    += mainwindow.ui \
-    API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui
+    API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
+    API/Headers/GDrive/GUI/Forms/AuthDialog.ui
