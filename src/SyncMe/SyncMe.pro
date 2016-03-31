@@ -16,7 +16,8 @@ CONFIG += C++11
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    API/Sources/Dropbox/SM_qdropbox.cpp
+    API/Sources/Dropbox/SM_qdropbox.cpp \
+    API/Sources/GDrive/Core/SM_DriveEngine.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
