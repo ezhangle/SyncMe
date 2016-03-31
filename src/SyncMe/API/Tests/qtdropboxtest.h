@@ -1,10 +1,10 @@
 #ifndef QTDROPBOXTEST_H
 #define QTDROPBOXTEST_H
 
-#include <QtTest>  // Imported on Tests main class
+#include <QtTest>  // Usando pruebas unitarias de Qt5
 #include <QDesktopServices>
 #include <QThread>
-#include "qtdropbox.h"
+#include "../Headers/Dropbox/SM_dropbox.h"
 #include "keys.hpp"
 
 class QtDropboxTest : public QObject
