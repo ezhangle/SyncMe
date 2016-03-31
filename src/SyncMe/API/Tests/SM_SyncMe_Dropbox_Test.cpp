@@ -299,7 +299,7 @@ bool SM_SyncMe_Dropbox_Test::connectDropbox(SM_QDropbox *d, SM_QDropbox::OAuthMe
 {
     QFile tokenFile("tokens");
 
-    if(tokenFile.exists()) // Reutilizar tokens anteriores
+    if(tokenFile.exists()) // Reutilizar tokens anteriores.
     {
         if(tokenFile.open(QIODevice::ReadOnly|QIODevice::Text))
         {
