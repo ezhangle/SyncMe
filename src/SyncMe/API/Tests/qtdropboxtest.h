@@ -1,4 +1,0 @@
-#ifndef QTDROPBOXTEST_H
-#define QTDROPBOXTEST_H
-
-#endif // QTDROPBOXTEST_H
