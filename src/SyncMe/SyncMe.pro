@@ -37,4 +37,5 @@ HEADERS  += \
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
-    API/Headers/GDrive/GUI/Forms/AuthDialog.ui
+    API/Headers/GDrive/GUI/Forms/AuthDialog.ui \
+    API/Headers/GDrive/GUI/Forms/CreateFolderDialog.ui
