@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     API/Sources/Dropbox/SM_dropbox_account.cpp \
     API/Sources/Dropbox/SM_dropbox_deltaresponse.cpp \
     API/Sources/Dropbox/SM_dropbox_fileinfo.cpp \
-    API/Sources/Dropbox/SM_dropbox_file.cpp
+    API/Sources/Dropbox/SM_dropbox_file.cpp \
+    API/Sources/Dropbox/SM_dropbox_json.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
