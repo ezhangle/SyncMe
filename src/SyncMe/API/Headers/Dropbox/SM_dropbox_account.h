@@ -20,7 +20,7 @@
   Ver https://www.dropbox.com/developers/reference/api#account-info para los detalles.
 
  */
-class SM_DROPBOXSHARED_EXPORT SM_Dropbox_Account : public SM_Dropbox_JSON
+class SM_DROPBOXSHARED_EXPORT SM_Dropbox_Account : public SM_Dropbox_Json
 {
     Q_OBJECT
 public:
