@@ -48,7 +48,8 @@ HEADERS  += mainwindow.h \
     SM_FoldersUI.h \
     SM_ItemInfo.h \
     SM_OperationsUI.h \
-    API/Headers/GDrive/Network/SM_Auth.h
+    API/Headers/GDrive/Network/SM_Auth.h \
+    API/Headers/GDrive/Network/SM_ContentManager.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
