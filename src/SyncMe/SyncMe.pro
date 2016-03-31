@@ -35,7 +35,8 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/Core/SM_EventHandler.h \
     API/Headers/GDrive/GUI/Controls/SM_ComboBox.h \
     API/Headers/GDrive/GUI/Controls/SM_ToolBar.h \
-    SM_AdditionalFolderManager.h
+    SM_AdditionalFolderManager.h \
+    SM_CheckUI.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
