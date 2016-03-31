@@ -22,7 +22,8 @@ SOURCES += main.cpp\
     SM_AccountsManager.cpp \
     SM_CheckUI.cpp \
     SM_FilesTransferUI.cpp \
-    SM_FilesUI.cpp
+    SM_FilesUI.cpp \
+    SM_FoldersUI.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
