@@ -29,7 +29,8 @@ SOURCES += main.cpp\
     API/Sources/GDrive/Network/SM_Auth.cpp \
     API/Sources/GDrive/Network/SM_ContentManager.cpp \
     API/Sources/GDrive/Network/SM_DownloadManager.cpp \
-    API/Sources/GDrive/Network/SM_FilesManager.cpp
+    API/Sources/GDrive/Network/SM_FilesManager.cpp \
+    API/Sources/GDrive/Network/SM_FoldersManager.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
