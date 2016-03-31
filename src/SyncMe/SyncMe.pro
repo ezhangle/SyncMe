@@ -22,7 +22,7 @@ SOURCES += main.cpp\
     API/Sources/Dropbox/SM_dropbox_fileinfo.cpp \
     API/Sources/Dropbox/SM_dropbox_file.cpp \
     API/Sources/Dropbox/SM_dropbox_json.cpp \
-    API/Tests/qtdropboxtest.cpp
+    API/Tests/SM_SyncMe_Dropbox_Test.cpp
 
 HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox.h \
@@ -33,7 +33,7 @@ HEADERS  += mainwindow.h \
     API/Headers/Dropbox/SM_dropbox_fileinfo.h \
     API/Headers/Dropbox/SM_dropbox_json.h \
     API/Headers/Dropbox/SM_qdropbox.h \
-    API/Tests/qtdropboxtest.h \
-    API/Tests/keys.hpp
+    API/Tests/keys.hpp \
+    API/Tests/SM_SyncMe_Dropbox_Test.h
 
 FORMS    += mainwindow.ui

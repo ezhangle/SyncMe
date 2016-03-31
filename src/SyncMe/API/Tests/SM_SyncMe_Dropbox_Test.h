@@ -1,5 +1,5 @@
-#ifndef QTDROPBOXTEST_H
-#define QTDROPBOXTEST_H
+#ifndef SM_SYNCME_DROPBOX_TEST_H
+#define SM_SYNCME_DROPBOX_TEST_H
 
 #include <QtTest>  // Usando pruebas unitarias de Qt5
 #include <QDesktopServices>
@@ -7,12 +7,12 @@
 #include "../Headers/Dropbox/SM_dropbox.h"
 #include "keys.hpp"
 
-class QtDropboxTest : public QObject
+class SM_SyncMe_Dropbox_Test : public QObject
 {
     Q_OBJECT
 
 public:
-   QtDropboxTest();
+   SM_SyncMe_Dropbox_Test();
 
 private Q_SLOTS:
 
@@ -38,9 +38,9 @@ private Q_SLOTS:
     void dropboxCase2();
 
 private:
-    void authorizeApplication(QDropbox *d);
-    bool connectDropbox(QDropbox* d, QDropbox::OAuthMethod m);
+    void authorizeApplication(SM_QDropbox *d);
+    bool connectDropbox(SM_QDropbox* d, SM_QDropbox::OAuthMethod m);
 };
 
 
-#endif // QTDROPBOXTEST_H
+#endif // SM_SYNCME_DROPBOX_TEST_H
