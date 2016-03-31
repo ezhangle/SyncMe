@@ -82,7 +82,8 @@ HEADERS  += mainwindow.h \
     API/Headers/GDrive/Share/SM_Debug.h \
     API/Headers/GDrive/Share/SM_Defs.h \
     API/Headers/GDrive/Share/SM_Enums.h \
-    API/Headers/GDrive/Share/SM_Registration.h
+    API/Headers/GDrive/Share/SM_Registration.h \
+    API/Headers/GDrive/Share/SM_Singleton.h
 
 FORMS    += mainwindow.ui \
     API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
