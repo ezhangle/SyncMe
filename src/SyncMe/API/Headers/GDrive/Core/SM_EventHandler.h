@@ -1,0 +1,4 @@
+#ifndef SM_EVENTHANDLER_H
+#define SM_EVENTHANDLER_H
+
+#endif // SM_EVENTHANDLER_H

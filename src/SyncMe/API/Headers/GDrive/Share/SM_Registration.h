@@ -1,0 +1,4 @@
+#ifndef SM_REGISTRATION_H
+#define SM_REGISTRATION_H
+
+#endif // SM_REGISTRATION_H

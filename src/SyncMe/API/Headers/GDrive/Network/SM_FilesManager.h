@@ -1,0 +1,4 @@
+#ifndef SM_FILESMANAGER_H
+#define SM_FILESMANAGER_H
+
+#endif // SM_FILESMANAGER_H
