@@ -32,7 +32,7 @@ HEADERS  += \
     API/Headers/Dropbox/SM_dropbox_fileinfo.h \
     API/Headers/Dropbox/SM_dropbox_json.h \
     API/Headers/Dropbox/SM_qdropbox.h \
-    API/Tests/keys.hpp \
-    API/Tests/SM_SyncMe_Dropbox_Test.h
+    API/Tests/SM_SyncMe_Dropbox_Test.h \
+    API/Tests/SM_Dropbox_Keys_Data.h
 
 FORMS    += mainwindow.ui

@@ -5,7 +5,7 @@
 #include <QDesktopServices>
 #include <QThread>
 #include "../Headers/Dropbox/SM_dropbox.h"
-#include "keys.hpp"
+#include "SM_Dropbox_Keys_Data.h"
 
 class SM_SyncMe_Dropbox_Test : public QObject
 {
@@ -16,7 +16,7 @@ public:
 
 private Q_SLOTS:
 
-   /* QDropboxJson */
+   /* Probando la clase SM_QDropbox */
     void jsonCase1();
     void jsonCase2();
     void jsonCase3();
@@ -33,7 +33,7 @@ private Q_SLOTS:
     void jsonCase14();
     void jsonCase15();
 
-  /* QDropbox */
+  /* Probando la clase SM_QDropbox */
     void dropboxCase1();
     void dropboxCase2();
 

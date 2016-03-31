@@ -8,154 +8,144 @@ SM_SyncMe_Dropbox_Test::SM_SyncMe_Dropbox_Test()
 
 
 /*!
- * \brief SM_Dropbox_Json: Simple string read
- * JSON represents an object with single string value. The test
- * tries to read the string value.
+ * Lectura de JSON con String.
  */
 void SM_SyncMe_Dropbox_Test::jsonCase1()
 {
     SM_Dropbox_Json json("{\"string\":\"asdf\"}");
-    QVERIFY2(json.isValid(), "json validity");
-    QVERIFY2(json.getString("string").compare("asdf") == 0, "string value does not match");
+    QVERIFY2(json.isValid(), "Validez del JSON");
+    QVERIFY2(json.getString("string").compare("asdf") == 0, "Los String no coinciden");
 }
 
 /*!
- * \brief SM_Dropbox_Json: Simple int read
- * JSON represents an object with a single integer value. The test
- * tries to read that value.
+ * Lectura de JSON con enteros.
  */
 void SM_SyncMe_Dropbox_Test::jsonCase2()
 {
     SM_Dropbox_Json json("{\"int\":1234}");
-    QVERIFY2(json.isValid(), "json validity");
-    QVERIFY2(json.getInt("int") == 1234, "integer value does not match");
+    QVERIFY2(json.isValid(), "Validez del JSON");
+    QVERIFY2(json.getInt("int") == 1234, "Los enteros no coinciden");
 }
 
 /*!
- * \brief SM_Dropbox_Json: Injson validity check
- * JSON is invalid. Test confirms invalidity of the JSON.
+ * Test de validez/invalidez de JSON
  */
 void SM_SyncMe_Dropbox_Test::jsonCase3()
 {
     SM_Dropbox_Json json("{\"test\":\"foo\"");
-    QVERIFY2(!json.isValid(), "injson validity not confirmed");
+    QVERIFY2(!json.isValid(), "Invalidez de JSON comprobada correctamente");
 }
 
 /*!
- * \brief SM_Dropbox_Json: Simple boolean read
- * JSON contains a single boolean value. Test accesses this value.
+ * Lectura de JSON con booleanos.
  */
 void SM_SyncMe_Dropbox_Test::jsonCase4()
 {
     SM_Dropbox_Json json("{\"bool\":true}");
-    QVERIFY2(json.isValid(), "json validity");
-    QVERIFY2(json.getBool("bool"), "boolean value does not match");
+    QVERIFY2(json.isValid(), "Validez del JSON");
+    QVERIFY2(json.getBool("bool"), "Los booleanos no coinciden");
 }
 
 /*!
- * \brief SM_Dropbox_Json: Simple floating point read
- * JSON contains a single double value. Test reads it.
+ * Lectura de JSON con flotantes.
  */
 void SM_SyncMe_Dropbox_Test::jsonCase5()
 {
     SM_Dropbox_Json json("{\"double\":14.323667}");
-    QVERIFY2(json.isValid(), "json validity");
-    QVERIFY2(json.getDouble("double"), "double value does not match");
+    QVERIFY2(json.isValid(), "Validez del JSON");
+    QVERIFY2(json.getDouble("double"), "Los Double no coinciden");
 }
 
 /*!
- * \brief SM_Dropbox_Json: Subjson read
- * JSON contains a subjson that is read, but not evaluated.
+ * Lectura de subjson
  */
 void SM_SyncMe_Dropbox_Test::jsonCase6()
 {
     SM_Dropbox_Json json("{\"json\": {\"string\":\"abcd\"}}");
-    QVERIFY2(json.isValid(), "json validity");
+    QVERIFY2(json.isValid(), "Validez del JSON");
 
     SM_Dropbox_Json* subjson = json.getJson("json");
 
-    QVERIFY2(subjson!=NULL, "subjson is null");
-    QVERIFY2(subjson->isValid(), "subjson invalid");
+    QVERIFY2(subjson!=NULL, "El subjson esta vacio");
+    QVERIFY2(subjson->isValid(), "Subjson invalido");
 }
 
 /*!
- * \brief SM_Dropbox_Json: Simple unsigned integer read.
- * JSON contains single unsigned integer that is read.
+ * Lectura de JSON con enteros sin signo.
  */
 void SM_SyncMe_Dropbox_Test::jsonCase7()
 {
     SM_Dropbox_Json json("{\"uint\":4294967295}");
-    QVERIFY2(json.isValid(), "json validity");
-    QVERIFY2(json.getUInt("uint") == 4294967295, "unsigned int value does not match");
+    QVERIFY2(json.isValid(), "Validez del JSON");
+    QVERIFY2(json.getUInt("uint") == 4294967295, "Los enteros sin signo no coinciden");
 }
 
 /**
- * @brief SM_Dropbox_Json: Test if clear works correctly
+ * Comprueba si clear() funciona correctamente
  */
 void SM_SyncMe_Dropbox_Test::jsonCase8()
 {
     SM_Dropbox_Json json("{\"uint\":4294967295}");
-    QVERIFY2(json.isValid(), "json validity");
+    QVERIFY2(json.isValid(), "Validez del JSON");
     json.clear();
-    QVERIFY2(json.getUInt("uint") == 0, "internal list not cleared");
-    QVERIFY2(json.strContent().isEmpty(), "json string is not cleared");
+    QVERIFY2(json.getUInt("uint") == 0, "Lista interna no limpiada");
+    QVERIFY2(json.strContent().isEmpty(), "El String JSON no ha sido limpiado");
 }
 
 /**
- * @brief SM_Dropbox_Json: Test if array interpretation and access are working.
+ * Comprueba si la interpretacion en array y el acceso es correcto
  */
 void SM_SyncMe_Dropbox_Test::jsonCase9()
 {
     SM_Dropbox_Json json("{\"array\": [1, \"test\", true, 7.3]}");
-    QVERIFY2(json.isValid(), "json validity");
+    QVERIFY2(json.isValid(), "Validez del JSON");
 
     QStringList l = json.getArray("array");
-    QVERIFY2(l.size() == 4, "array list has wrong size");
-    QVERIFY2(l.at(0).compare("1") == 0, "int element not correctly formatted");
-    QVERIFY2(l.at(1).compare("test") == 0, "string element not correctly formatted");
-    QVERIFY2(l.at(2).compare("true") == 0, "boolean element not correctly formatted");
-    QVERIFY2(l.at(3).compare("7.3") == 0, "double element not correctly formatted");
+    QVERIFY2(l.size() == 4, "El array tiene un size erroneo");
+    QVERIFY2(l.at(0).compare("1") == 0, "Elemento entero mal formateado");
+    QVERIFY2(l.at(1).compare("test") == 0, "Elemento String mal formateado");
+    QVERIFY2(l.at(2).compare("true") == 0, "Elemento booleano mal formateado");
+    QVERIFY2(l.at(3).compare("7.3") == 0, "Elemento double mal formateado");
 }
 
 /**
- * @brief SM_Dropbox_Json: Test if json in array is accessible.
+ * Comprueba que un JSON como array es accesible
  */
 void SM_SyncMe_Dropbox_Test::jsonCase10()
 {
     SM_Dropbox_Json json("{\"jsonarray\":[{\"key\":\"value\"}]}");
-    QVERIFY2(json.isValid(), "json validity");
+    QVERIFY2(json.isValid(), "Validez del JSON");
 
     QStringList l = json.getArray("jsonarray");
-    QVERIFY2(l.size() == 1, "array list has wrong size");
+    QVERIFY2(l.size() == 1, "El array tiene un size erroneo");
 
     SM_Dropbox_Json arrayJson(l.at(0));
-    QVERIFY2(arrayJson.isValid(), "json from array is invalid");
-    QVERIFY2(arrayJson.getString("key").compare("value") == 0, "json from array contains wrong value");
+    QVERIFY2(arrayJson.isValid(), "El JSON desde el array es invalido");
+    QVERIFY2(arrayJson.getString("key").compare("value") == 0, "El JSON desde el array contiene un valor erroneo");
 }
 
 /**
- * @brief SM_Dropbox_Json: Checks if compare() is working by doing a self-comparison.
+ * Comprueba si compare() funciona bien haciendo una auto-comparacion
  */
 void SM_SyncMe_Dropbox_Test::jsonCase11()
 {
     QString jsonStr = "{\"int\": 1, \"string\": \"test\", \"bool\": true, \"json\": {\"key\": \"value\"}, "
                       "\"array\": [1, 3.5, {\"arraykey\": \"arrayvalue\"}]}";
     SM_Dropbox_Json json(jsonStr);
-    QVERIFY2(json.isValid(), "json validity");
-    QVERIFY2(json.compare(json) == 0, "comparing the same json resulted in negative comparison");
+    QVERIFY2(json.isValid(), "Validez del JSON");
+    QVERIFY2(json.compare(json) == 0, "Comparando el mismo json dio en un resultado negativo");
 }
 
 /**
- * @brief SM_Dropbox_Json: Test whether strContent() returns the correct JSON
- * The test case creates a JSON and another JSON that is based on the return value of strContent() of
- * the first JSON. Both JSONs are compared afterwards and expected to be equal.
+ * Este test crea un JSON y otro JSON que se basa en el valor devuelto por strContent()
+ * del primer JSON. Ambos JSON son comparados deespues y esperamos que sean iguales.
  */
 void SM_SyncMe_Dropbox_Test::jsonCase12()
 {
     QString jsonStr = "{\"int\": 1, \"string\": \"test\", \"bool\": true, \"json\": {\"key\": \"value\"}, "
                       "\"array\": [1, 3.5, {\"arraykey\": \"arrayvalue\"}], \"timestamp\": \"Sat, 21 Aug 2010 22:31:20 +0000\"}";
     SM_Dropbox_Json json(jsonStr);
-    QVERIFY2(json.isValid(), "json validity");
+    QVERIFY2(json.isValid(), "Validez del JSON");
 
     QString jsonContent = json.strContent();
     SM_Dropbox_Json json2(jsonContent);
@@ -163,95 +153,86 @@ void SM_SyncMe_Dropbox_Test::jsonCase12()
 
     int compare = json.compare(json2);
 
-    QVERIFY2(compare == 0, "string content of json is incorrect or compare is broken");
+    QVERIFY2(compare == 0, "El contenido del string es incorrecto");
 }
 
 /**
- * @brief SM_Dropbox_Json: Setter functions
- * The test verifies if the setter functions are working correctly by setting a value and
- * reading it afterwards.
+ * Este test verifica que los setters y los getters funcionan correctamente
  */
 void SM_SyncMe_Dropbox_Test::jsonCase13()
 {
     SM_Dropbox_Json json;
     json.setInt("testInt", 10);
-    QVERIFY2(json.getInt("testInt") == 10, "setInt of json is incorrect");
+    QVERIFY2(json.getInt("testInt") == 10, "setInt de JSON es incorrecto");
 
     json.setUInt("testUInt", 10);
-    QVERIFY2(json.getUInt("testUInt") == 10, "setUInt of json is incorrect");
+    QVERIFY2(json.getUInt("testUInt") == 10, "setUInt de JSON es incorrecto");
 
     json.setDouble("testDouble", 10.0);
-    QVERIFY2(json.getDouble("testDouble") == 10.0, "setDouble of json is incorrect");
+    QVERIFY2(json.getDouble("testDouble") == 10.0, "setDouble de JSON es incorrecto");
 
     json.setBool("testBool", true);
-    QVERIFY2(json.getBool("testBool"), "setBool of json is incorrect");
+    QVERIFY2(json.getBool("testBool"), "setBool de JSON es incorrecto");
 
     json.setString("testString", "10");
-    QVERIFY2(json.getString("testString").compare("10"), "setString of json is incorrect");
+    QVERIFY2(json.getString("testString").compare("10"), "setString de JSON es incorrecto");
 
     QDateTime time = QDateTime::currentDateTime();
     json.setTimestamp("testTimestamp", time);
-    QVERIFY2(json.getTimestamp("testTimestamp").daysTo(time) == 0, "setTimestamp of json is incorrect");
+    QVERIFY2(json.getTimestamp("testTimestamp").daysTo(time) == 0, "setTimestamp de JSON es incorrecto");
 }
 
 /**
- * @brief SM_Dropbox_Json: [] in strings
- * Verify that square brackets in strings are working correctly.
+ * Este test verifica que las [ ] se parsean correctamente en JSON
  */
 void SM_SyncMe_Dropbox_Test::jsonCase14()
 {
     SM_Dropbox_Json json("{\"string\": \"[asdf]abcd\"}");
-    QVERIFY2(json.isValid(), "json could not be parsed");
-    QVERIFY2(json.getString("string").compare("[asdf]abcd") == 0, "square brackets in string not parsed correctly");
+    QVERIFY2(json.isValid(), "El JSON no ha podido ser parseado");
+    QVERIFY2(json.getString("string").compare("[asdf]abcd") == 0, "Las [ ] no se parsean correctamente");
 }
 
 /**
- * @brief SM_Dropbox_Json: {} in strings
- * Verify that curly brackets within a string are parsed correctly
+ * Este test verifica que las { } se parsean correctamente en JSON
  */
 void SM_SyncMe_Dropbox_Test::jsonCase15()
 {
     SM_Dropbox_Json json("{\"string\": \"{asdf}abcd\"}");
-    QVERIFY2(json.isValid(), "json could not be parsed");
+    QVERIFY2(json.isValid(), "El JSON no ha podido ser parseado");
     QVERIFY2(json.getString("string").compare("{asdf}abcd") == 0,
-         QString("curly brackets in string not parsed correctly [%1]").arg(json.getString("string")).toStdString().c_str());
+         QString("Las { } no se parsean correctamente [%1]").arg(json.getString("string")).toStdString().c_str());
 }
 
 /**
- * @brief QDropbox: Plaintext Connection
- * This test connects to Dropbox and sends a dummy request to check that the connection in
- * Plaintext mode. The request is not processed any further! <b>You are required to authorize
- * the application for access! The Authorization URI will be printed to you and manual interaction
- * is required to pass this test!</b>
+ * Este test conecta a Dropbox y envia un esqueleto de peticion para comprobar
+ * la conexion con texto plano. La peticion no se procesa obviamente...
+ * <b>Debes autorizar a SyncMe en tu cuenta de Dropbox para poder utilizar este test!</b>
  */
 void SM_SyncMe_Dropbox_Test::dropboxCase1()
 {
     SM_QDropbox dropbox(APP_KEY, APP_SECRET);
-    QVERIFY2(connectDropbox(&dropbox, SM_QDropbox::Plaintext), "connection error");
+    QVERIFY2(connectDropbox(&dropbox, SM_QDropbox::Plaintext), "Error de conexion");
     SM_Dropbox_Account accInf = dropbox.requestAccountInfoAndWait();
-    QVERIFY2(dropbox.error() == SM_QDropbox::NoError, "error on request");
+    QVERIFY2(dropbox.error() == SM_QDropbox::NoError, "Error en la peticion");
     return;
 }
 
 /**
- * @brief QDropbox: delta
- * This test connects to Dropbox and tests the delta API.
+ * Este test conecta a Dropbox y prueba la API de llamadas delta.
  *
- * <b>You are required to authorize
- * the application for access! The Authorization URI will be printed to you and manual interaction
- * is required to pass this test!</b>
+ * <b>Debes autorizar a SyncMe en tu cuenta de Dropbox para poder utilizar este test!</b>
  */
 void SM_SyncMe_Dropbox_Test::dropboxCase2()
 {
     QTextStream strout(stdout);
     SM_QDropbox dropbox(APP_KEY, APP_SECRET);
-    QVERIFY2(connectDropbox(&dropbox, SM_QDropbox::Plaintext), "connection error");
+    QVERIFY2(connectDropbox(&dropbox, SM_QDropbox::Plaintext), "Error en la conexion");
 
     QString cursor = "";
     bool hasMore = true;
     SM_Dropbox_FileInfoMap file_cache;
 
-    strout << "requesting delta...\n";
+    strout << "Pidiendo delta...\n";
     do
     {
         SM_Dropbox_DeltaResponse r = dropbox.requestDeltaAndWait(cursor, "");
@@ -267,23 +248,23 @@ void SM_SyncMe_Dropbox_Test::dropboxCase2()
             }
             else
             {
-                strout << "inserting file " << i.key() << "\n";
+                strout << "insertando fichero " << i.key() << "\n";
                 file_cache.insert(i.key(), i.value());
             }
         }
 
     } while (hasMore);
-    strout << "next cursor: " << cursor << "\n";
+    strout << "cursor del siguiente apuntando a: " << cursor << "\n";
     for(SM_Dropbox_FileInfoMap::const_iterator i = file_cache.begin(); i != file_cache.end(); i++)
     {
-        strout << "file " << i.key() << " last modified " << i.value()->clientModified().toString() << "\n";
+        strout << "fichero " << i.key() << " modificado por ultima vez " << i.value()->clientModified().toString() << "\n";
     }
 
     return;
 }
 
 /**
- * @brief Prompt the user for authorization.
+ * Pedir autorizacion al usuario.
  */
 void SM_SyncMe_Dropbox_Test::authorizeApplication(SM_QDropbox* d)
 {
@@ -291,15 +272,15 @@ void SM_SyncMe_Dropbox_Test::authorizeApplication(SM_QDropbox* d)
     QTextStream strin(stdin);
 
     strout << "##########################################" << endl;
-    strout << "# You need to grant this test access to  #" << endl;
-    strout << "# your Dropbox!                          #" << endl;
+    strout << "# Debes dar acceso a los Tests de SyncMe #" << endl;
+    strout << "# a tu cuenta de Dropbox!                #" << endl;
     strout << "#                                        #" << endl;
-    strout << "# Go to the following URL to do so.      #" << endl;
+    strout << "# Ve a la siguiente URL para hacerlo     #" << endl;
     strout << "##########################################" << endl << endl;
 
     strout << "URL: " << d->authorizeLink().toString() << endl;
     QDesktopServices::openUrl(d->authorizeLink());
-    strout << "Wait for authorized the application!";
+    strout << "Esperando hasta que autorices a SyncMe!";
     strout << endl;
 
     while(d->requestAccessTokenAndWait() == false)
@@ -318,7 +299,7 @@ bool SM_SyncMe_Dropbox_Test::connectDropbox(SM_QDropbox *d, SM_QDropbox::OAuthMe
 {
     QFile tokenFile("tokens");
 
-    if(tokenFile.exists()) // reuse old tokens
+    if(tokenFile.exists()) // Reutilizar tokens anteriores
     {
         if(tokenFile.open(QIODevice::ReadOnly|QIODevice::Text))
         {
@@ -336,10 +317,10 @@ bool SM_SyncMe_Dropbox_Test::connectDropbox(SM_QDropbox *d, SM_QDropbox::OAuthMe
         tokenFile.close();
     }
 
-    // acquire new token
+    // Adquirir nuevo token
     if(!d->requestTokenAndWait())
     {
-        qCritical() << "error on token request";
+        qCritical() << "Error al pedir un token";
         return false;
     }
 
@@ -347,7 +328,7 @@ bool SM_SyncMe_Dropbox_Test::connectDropbox(SM_QDropbox *d, SM_QDropbox::OAuthMe
     if(!d->requestAccessTokenAndWait())
     {
         int i = 0;
-        for(;i<3; ++i) // we try three times
+        for(;i<3; ++i) // Probamos 3 veces
         {
             if(d->error() != SM_QDropbox::TokenExpired)
                 break;
@@ -356,7 +337,7 @@ bool SM_SyncMe_Dropbox_Test::connectDropbox(SM_QDropbox *d, SM_QDropbox::OAuthMe
 
        if(i>3)
        {
-           qCritical() <<  "too many tries for authentication";
+           qCritical() <<  "Demasiados intentos para la autorizacion";
            return false;
        }
 
