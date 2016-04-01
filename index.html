@@ -24,8 +24,8 @@
          "scopes" : [ SYNCME_SCOPE ],
        };
        oauth2.login(req, function(token) {
-         t = document.createTextNode("Token de OAuth para SyncMe recibido:\n" + token + "\n"
-             + "Expira en " + oauth2.expiresIn(req) + " ms\n");
+         t = document.createTextNode("Token de OAuth para SyncMe recibido:\n<b>" + token + "</b>\n"
+             + "- Expira en <b>" + oauth2.expiresIn(req) + "</b> ms\n");
          document.body.removeChild(button);
          para.appendChild(t);
          document.body.appendChild(para);
