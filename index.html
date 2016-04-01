@@ -14,7 +14,6 @@
      var SYNCME_SCOPE = "http://docs.google.com/feeds https://www.googleapis.com/auth/userinfo.email";
 
      var button = document.createElement("button");
-     var para = document.createElement("P");
      var t1;
      var t2;
      var t3;
@@ -30,10 +29,9 @@
          t2 = document.createTextNode("" + token + "\n");
          t3 = document.createTextNode("Expira en " + oauth2.expiresIn(req) + " ms\n");
          document.body.removeChild(button);
-         para.appendChild(t1);
-         para.appendChild(t2);
-         para.appendChild(t3);
-         document.body.appendChild(para);
+         document.body.appendChild(t1);
+         document.body.appendChild(t2);
+         document.body.appendChild(t3);
        }, function(error) {
          alert("Error:\n" + error);
        });
