@@ -1,4 +1,0 @@
-#ifndef SM_XMLHANDLER_H
-#define SM_XMLHANDLER_H
-
-#endif // SM_XMLHANDLER_H

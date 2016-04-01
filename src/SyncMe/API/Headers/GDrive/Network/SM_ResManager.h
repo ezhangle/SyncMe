@@ -1,4 +1,0 @@
-#ifndef SM_RESMANAGER_H
-#define SM_RESMANAGER_H
-
-#endif // SM_RESMANAGER_H
