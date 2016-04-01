@@ -15,7 +15,9 @@
 
      var button = document.createElement("button");
      var para = document.createElement("P");
-     var t;
+     var t1;
+     var t2;
+     var t3;
      button.innerText = "SyncMe - Autorizar a la aplicación con Google";
      button.onclick = function() {
        var req = {
@@ -24,10 +26,13 @@
          "scopes" : [ SYNCME_SCOPE ],
        };
        oauth2.login(req, function(token) {
-         t = document.createTextNode("Token de OAuth para SyncMe recibido:\n<b>" + token + "</b>\n"
-             + "- Expira en <b>" + oauth2.expiresIn(req) + "</b> ms\n");
+         t1 = document.createTextNode("Token de acceso OAuth para SyncMe recibido:");
+         t2 = document.createTextNode("" + token + "\n");
+         t3 = document.createTextNode("Expira en " + oauth2.expiresIn(req) + " ms\n");
          document.body.removeChild(button);
-         para.appendChild(t);
+         para.appendChild(t1);
+         para.appendChild(t2);
+         para.appendChild(t3);
          document.body.appendChild(para);
        }, function(error) {
          alert("Error:\n" + error);
