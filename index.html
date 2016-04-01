@@ -25,14 +25,14 @@
          "scopes" : [ SYNCME_SCOPE ],
        };
        oauth2.login(req, function(token) {
+         document.body.removeChild(button);
          t1 = document.createTextNode("Token de acceso OAuth para SyncMe recibido:");
+         document.body.appendChild(t1);
          document.body.appendChild(document.createElement("br"));
          t2 = document.createTextNode("" + token + "");
+         document.body.appendChild(t2);
          document.body.appendChild(document.createElement("br"));
          t3 = document.createTextNode("Expira en " + oauth2.expiresIn(req) + " ms");
-         document.body.removeChild(button);
-         document.body.appendChild(t1);
-         document.body.appendChild(t2);
          document.body.appendChild(t3);
        }, function(error) {
          alert("Error:\n" + error);
