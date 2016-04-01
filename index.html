@@ -26,8 +26,10 @@
        };
        oauth2.login(req, function(token) {
          t1 = document.createTextNode("Token de acceso OAuth para SyncMe recibido:");
-         t2 = document.createTextNode("" + token + "\n");
-         t3 = document.createTextNode("Expira en " + oauth2.expiresIn(req) + " ms\n");
+         document.body.appendChild(document.createElement("br"));
+         t2 = document.createTextNode("" + token + "");
+         document.body.appendChild(document.createElement("br"));
+         t3 = document.createTextNode("Expira en " + oauth2.expiresIn(req) + " ms");
          document.body.removeChild(button);
          document.body.appendChild(t1);
          document.body.appendChild(t2);
