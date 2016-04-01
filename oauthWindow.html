@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="text/javascript">
+      if (window.opener && window.opener.oauth2 && window.opener.oauth2.__doLogin) {
+        window.opener.oauth2.__doLogin(location.hash);
+      } else {
+        document.body.innerText =
+            "Parace que tu navegador esta bloqueando esta ventana de comunicarse con la ventana principal.";
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
