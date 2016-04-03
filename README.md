@@ -32,7 +32,7 @@ Creating a new folder (Pre-release 0.2)
 
 ## Building
 
-..
+See [INSTALL.md](INSTALL.md)
 
 ## Contributing
 
@@ -45,7 +45,7 @@ Creating a new folder (Pre-release 0.2)
 
 ## Contact
 
-You can contact me by sending an email to [arodriba@ull.edu.es](mailto:arodriba@ull.edu.es).
+You can contact me by sending an email to [arodriba@ull.edu.es](mailto:arodriba@ull.edu.es)
 
 ## License
 
