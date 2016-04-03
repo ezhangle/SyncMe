@@ -20,19 +20,23 @@ before_install:
   - tar -xJf Qt5.2.0.tar.xz -C ~/Qt5.2.0
   - sudo chmod -R 777 ~/Qt5.2.0/
   - ln -s ~/Qt5.2.0/5.2.0/gcc_64/mkspecs/linux-g++ ~/Qt5.2.0/5.2.0/gcc_64/mkspecs/linux-gcc
+  - QTDIR="/opt/qt54"
+  - PATH="$QTDIR/bin:$PATH"
+  - qt54-env.sh
   - git clone https://github.com/AdrianBZG/SyncMe.git
   - cd SyncMe/src/SyncMe
-  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -v
-  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake
+  - sudo ldconfig
+  - qmake -v
+  - qmake
   - make
   - sudo make install
-  - sudo ldconfig
-  - cd ../..
+  - cd ../../..
 
 script:
   - QTDIR="/opt/qt54"
   - PATH="$QTDIR/bin:$PATH"
   - qt54-env.sh
-  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -v
-  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake
+  - cd SyncMe/src/SyncMe
+  - qmake -v
+  - qmake
   - make
