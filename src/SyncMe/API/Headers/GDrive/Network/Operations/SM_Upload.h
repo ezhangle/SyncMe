@@ -1,4 +1,12 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#ifndef UPLOAD_H
+#define UPLOAD_H
 
-#endif // SM_ITEMINFO_H
+#include <QNetworkAccessManager>
+
+class SM_Upload : public QNetworkAccessManager
+{
+public:
+    SM_Upload(QObject *parent = 0);
+};
+
+#endif // UPLOAD_H
