@@ -1,4 +1,5 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#include "SM_AccountsManager.h"
 
-#endif // SM_ITEMINFO_H
+SM_AccountsManager::SM_AccountsManager()
+{
+}
