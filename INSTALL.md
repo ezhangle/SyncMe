@@ -4,6 +4,7 @@
 - [Windows](#windows)
 <br>
 - [Building using Qt Creator](#building-using-qt-creator)
+- [Installing OpenSSL](#installing-openssl)
 
 ###Unix-like (Linux, Unix, OS X):
 
@@ -80,3 +81,7 @@ To build the project with Qt Creator:
 7. Click the big green arrow on bottom left (or press Ctlr+R), that should build and run the project.
 8. Wait for it to be built.
 9. You should have a binary in whenever `Project` (on the left) `-> Build directory` points to.
+
+##Installing OpenSSL
+
+To install OpenSSL follow this guide closely (it's very easy): [Quick compilation and installation of OpenSSL](https://wiki.openssl.org/index.php/Compilation_and_Installation#Quick)
