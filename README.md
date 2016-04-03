@@ -22,6 +22,12 @@ Connecting to your Google Drive account (Pre-release 0.2)
 <div style="text-align:center">![Creating a new folder (Pre-release 0.2)](http://i.imgur.com/jUfT2mT.png?1 "Creating a new folder (Pre-release 0.2)")</div><br>
 Creating a new folder (Pre-release 0.2)
 
+## Dependencies
+
+`g++ >= 4.8`
+`qt >= 5`
+`openssl`
+
 ## Building
 
 ..
