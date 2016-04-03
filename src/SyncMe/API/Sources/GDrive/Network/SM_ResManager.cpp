@@ -1,4 +1,20 @@
-#ifndef SM_RESMANAGER_H
-#define SM_RESMANAGER_H
+#include "SM_ResManager.h"
+#include "share/SM_CommonTools.h"
 
-#endif // SM_RESMANAGER_H
+SM_ResManager::SM_ResManager(QObject *parent):
+            SM_DownloadFileManager(parent)
+{
+}
+
+void SM_ResManager::cash(const QString &url)
+{
+  QString fileNameToSave(QFileInfo(url).fileName());
+
+  startDownload(QUrl(url), fileNameToSave, "image/png");
+}
+
+void SM_ResManager::slotDownloadFinished()
+{
+    SM_DownloadFileManager::slotDownloadFinished();
+    emit signalResDownloaded();
+}
