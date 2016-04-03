@@ -10,7 +10,7 @@ before_install:
   - if [ "$CXX" = "g++" ]; then sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50; fi
   - if [ "$CXX" = "g++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 50; fi
   - if [ "$CXX" = "g++" ]; then sudo apt-get install libc6-i386 qt54tools qt54svg qt54webkit; fi
-  - sudo pip install coveralls --use-wheel
+  - sudo pip install --user cpp-coveralls
   - $CC --version
   - which $CC
   - export CC=`which $CC`
@@ -25,8 +25,10 @@ before_install:
 script:
   - cd SyncMe/src/SyncMe
   - qmake
+  - sudo ./configure --enable-gcov
   - make
+  - make check
   - sudo make install
 
 after_success:
-  - coveralls
+  - coveralls --exclude lib --exclude tests --gcov options '\-lp'
