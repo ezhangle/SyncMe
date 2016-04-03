@@ -1,4 +1,18 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#include "SM_Delete.h"
+#include "settings/SM_SettingsManager.h"
 
-#endif // SM_ITEMINFO_H
+SM_Delete::SM_Delete(QObject *parent)
+    :SM_NetworkManager(parent)
+{
+}
+
+void SM_Delete::item(const SM_Items::Data &source)
+{
+    queries.setRawHeader(SM_SettingsManager().accessToken(), request);
+    deleteRequest(queries.constructDeleteFileUrl(source.self));
+}
+
+void SM_Delete::slotReplyFinished(QNetworkReply*)
+{
+   updatePanelContent(false);
+}
