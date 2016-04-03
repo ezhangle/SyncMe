@@ -11,19 +11,29 @@
    (function() {
      var GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/auth";
      var GOOGLE_CLIENT_ID = "861466322111-54tn24tg5qrdifk51ej7is71jok2tb3i.apps.googleusercontent.com";
-     var PLUS_ME_SCOPE = "http://docs.google.com/feeds+https://www.googleapis.com/auth/userinfo.email";
+     var SYNCME_SCOPE = "https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email";
 
      var button = document.createElement("button");
+     var t1;
+     var t2;
+     var t3;
      button.innerText = "SyncMe - Autorizar a la aplicación con Google";
      button.onclick = function() {
        var req = {
          "authUrl" : GOOGLE_AUTH_URL,
          "clientId" : GOOGLE_CLIENT_ID,
-         "scopes" : [ PLUS_ME_SCOPE ],
+         "scopes" : [ SYNCME_SCOPE ],
        };
        oauth2.login(req, function(token) {
-         alert("Token de OAuth recibido:\n" + token + "\n"
-             + "Expira en " + oauth2.expiresIn(req) + " ms\n");
+         document.body.removeChild(button);
+         t1 = document.createTextNode("Token de acceso OAuth para SyncMe recibido:");
+         document.body.appendChild(t1);
+         document.body.appendChild(document.createElement("br"));
+         t2 = document.createTextNode("" + token + "");
+         document.body.appendChild(t2);
+         document.body.appendChild(document.createElement("br"));
+         t3 = document.createTextNode("Expira en " + oauth2.expiresIn(req) + " ms");
+         document.body.appendChild(t3);
        }, function(error) {
          alert("Error:\n" + error);
        });
