@@ -22,7 +22,7 @@ before_install:
   - ln -s ~/Qt5.2.0/5.2.0/gcc_64/mkspecs/linux-g++ ~/Qt5.2.0/5.2.0/gcc_64/mkspecs/linux-gcc
   - git clone https://github.com/AdrianBZG/SyncMe.git
   - cd SyncMe/src/SyncMe
-  - qmake
+  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -v
   - make
   - sudo make install
   - sudo ldconfig
