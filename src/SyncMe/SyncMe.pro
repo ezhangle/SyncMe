@@ -1,99 +1,113 @@
 #-------------------------------------------------
 #
-# Definiciones generales y dependencias
+# Prototipo de SyncMe usando el motor de Google Drive
 #
 #-------------------------------------------------
 
-QT       += core gui testlib network xml
+QT += core gui webkit network xml
+PKGCONFIG += openssl # Libreria OpenSSL de desarrollo funcionando en Linux (En windows requiere poner el DLL manualmente en el directorio del .exe)
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets webkitwidgets
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT
+
+# Icono en Windows
+#ifdef Q_OS_WIN32
+RC_FILE = syncme.rc
+#endif
+
+# Icono en MAC OS X
+#ifdef Q_OS_MAC
+ICON = res/SyncMe.icns
+#endif
+
+# Icono en Symbian
+#ifdef Q_OS_SYMBIAN
+ICON = res/SyncMe.svg
+#endif
+
 
 TARGET = SyncMe
 TEMPLATE = app
 
-CONFIG += C++11
-
-
-<<<<<<< HEAD
-SOURCES +=\
-    API/Sources/Dropbox/SM_qdropbox.cpp \
-    API/Sources/Dropbox/SM_dropbox_account.cpp \
-    API/Sources/Dropbox/SM_dropbox_deltaresponse.cpp \
-    API/Sources/Dropbox/SM_dropbox_fileinfo.cpp \
-    API/Sources/Dropbox/SM_dropbox_file.cpp \
-    API/Sources/Dropbox/SM_dropbox_json.cpp \
-    API/Tests/SM_SyncMe_Dropbox_Test.cpp
-=======
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    API/Sources/Dropbox/SM_qdropbox.cpp \
+SOURCES += API/Sources/GDrive/Core/main.cpp \
     API/Sources/GDrive/Core/SM_DriveEngine.cpp \
-    API/Sources/GDrive/Core/main.cpp \
-    SM_AccountsManager.cpp \
-    SM_CheckUI.cpp \
-    SM_FilesTransferUI.cpp \
-    SM_FilesUI.cpp \
-    SM_FoldersUI.cpp \
-    SM_ItemInfo.cpp \
-    SM_OperationsUI.cpp \
+    API/Sources/GDrive/GUI/Controls/SM_ComboBox.cpp \
+    API/Sources/GDrive/GUI/Controls/SM_Spacer.cpp \
+    API/Sources/GDrive/GUI/Controls/SM_ToolBar.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_AuthDialog.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_CreateFolderDialog.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_FilePanel.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_GDrive_MainWindow.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_ProgressBarDialog.cpp \
+    API/Sources/GDrive/GUI/Tools/SM_PainterHelper.cpp \
+    API/Sources/GDrive/GUI/SM_AccountsManager.cpp \
+    API/Sources/GDrive/GUI/SM_CheckUI.cpp \
+    API/Sources/GDrive/GUI/SM_ContentUI.cpp \
+    API/Sources/GDrive/GUI/SM_FilesTransferUI.cpp \
+    API/Sources/GDrive/GUI/SM_Items.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_SettingsDialog.cpp \
+    API/Sources/GDrive/GUI/Forms/SM_ShareDialog.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Children.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Copy.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Create.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Delete.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Download.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Move.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Operation.cpp \
+    API/Sources/GDrive/Network/Operations/SM_OperationsManager.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Rename.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Share.cpp \
+    API/Sources/GDrive/Network/Operations/SM_Upload.cpp \
     API/Sources/GDrive/Network/SM_Auth.cpp \
     API/Sources/GDrive/Network/SM_ContentManager.cpp \
-    API/Sources/GDrive/Network/SM_DownloadManager.cpp \
-    API/Sources/GDrive/Network/SM_FilesManager.cpp \
-    API/Sources/GDrive/Network/SM_FoldersManager.cpp \
+    API/Sources/GDrive/Network/SM_DownloadFileManager.cpp \
     API/Sources/GDrive/Network/SM_NetworkManager.cpp \
-    API/Sources/GDrive/Network/SM_OperationsManager.cpp \
     API/Sources/GDrive/Network/SM_Queries.cpp \
     API/Sources/GDrive/Network/SM_ResManager.cpp \
-    API/Sources/GDrive/Network/SM_UploadManager.cpp \
+    API/Sources/GDrive/Network/SM_UploadFileManager.cpp \
     API/Sources/GDrive/Parsers/SM_JSONParser.cpp \
     API/Sources/GDrive/Parsers/SM_XMLHandler.cpp \
     API/Sources/GDrive/Parsers/SM_XMLParser.cpp \
     API/Sources/GDrive/Settings/SM_AccountInfo.cpp \
     API/Sources/GDrive/Settings/SM_SettingsManager.cpp \
-    API/Sources/GDrive/Share/SM_CommonTools.cpp \
-    API/Sources/Dropbox/SM_dropbox_account.cpp \
-    API/Sources/Dropbox/SM_dropbox_deltaresponse.cpp \
-    API/Sources/Dropbox/SM_dropbox_file.cpp \
-    API/Sources/Dropbox/SM_dropbox_fileinfo.cpp \
-    API/Sources/Dropbox/SM_dropbox_json.cpp \
-    API/Tests/qtdropboxtest.cpp
->>>>>>> gdrive-engine
+    API/Sources/GDrive/Share/SM_CommonTools.cpp
 
-HEADERS  += \
-    API/Headers/Dropbox/SM_dropbox.h \
-    API/Headers/Dropbox/SM_dropbox_global.h \
-    API/Headers/Dropbox/SM_dropbox_account.h \
-    API/Headers/Dropbox/SM_dropbox_deltaresponse.h \
-    API/Headers/Dropbox/SM_dropbox_file.h \
-    API/Headers/Dropbox/SM_dropbox_fileinfo.h \
-    API/Headers/Dropbox/SM_dropbox_json.h \
-    API/Headers/Dropbox/SM_qdropbox.h \
-<<<<<<< HEAD
-    API/Tests/SM_SyncMe_Dropbox_Test.h \
-    API/Tests/SM_Dropbox_Keys_Data.h
-=======
+HEADERS += \
     API/Headers/GDrive/Core/SM_DriveEngine.h \
-    API/Headers/GDrive/Core/SM_EventHandler.h \
     API/Headers/GDrive/GUI/Controls/SM_ComboBox.h \
+    API/Headers/GDrive/GUI/Controls/SM_Spacer.h \
     API/Headers/GDrive/GUI/Controls/SM_ToolBar.h \
-    SM_AdditionalFolderManager.h \
-    SM_CheckUI.h \
-    SM_FilesTransferUI.h \
-    SM_FilesUI.h \
-    SM_FoldersUI.h \
-    SM_ItemInfo.h \
-    SM_OperationsUI.h \
+    API/Headers/GDrive/GUI/Forms/SM_AuthDialog.h \
+    API/Headers/GDrive/GUI/Forms/SM_CreateFolderDialog.h \
+    API/Headers/GDrive/GUI/Forms/SM_FilePanel.h \
+    API/Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.h \
+    API/Headers/GDrive/GUI/Forms/SM_ProgressBarDialog.h \
+    API/Headers/GDrive/GUI/Forms/SM_SettingsDialog.h \
+    API/Headers/GDrive/GUI/Forms/SM_ShareDialog.h \
+    API/Headers/GDrive/GUI/Tools/SM_PainterHelper.h \
+    API/Headers/GDrive/GUI/SM_AccountsManager.h \
+    API/Headers/GDrive/GUI/SM_CheckUI.h \
+    API/Headers/GDrive/GUI/SM_ContentUI.h \
+    API/Headers/GDrive/GUI/SM_FilesTransferUI.h \
+    API/Headers/GDrive/GUI/SM_Items.h \
+    API/Headers/GDrive/Network/Operations/SM_Children.h \
+    API/Headers/GDrive/Network/Operations/SM_Copy.h \
+    API/Headers/GDrive/Network/Operations/SM_Create.h \
+    API/Headers/GDrive/Network/Operations/SM_Delete.h \
+    API/Headers/GDrive/Network/Operations/SM_Download.h \
+    API/Headers/GDrive/Network/Operations/SM_Move.h \
+    API/Headers/GDrive/Network/Operations/SM_Operation.h \
+    API/Headers/GDrive/Network/Operations/SM_OperationsManager.h \
+    API/Headers/GDrive/Network/Operations/SM_Rename.h \
+    API/Headers/GDrive/Network/Operations/SM_Share.h \
+    API/Headers/GDrive/Network/Operations/SM_Upload.h \
     API/Headers/GDrive/Network/SM_Auth.h \
     API/Headers/GDrive/Network/SM_ContentManager.h \
-    API/Headers/GDrive/Network/SM_DownloadManager.h \
-    API/Headers/GDrive/Network/SM_FilesManager.h \
-    API/Headers/GDrive/Network/SM_FoldersManager.h \
     API/Headers/GDrive/Network/SM_NetworkManager.h \
-    API/Headers/GDrive/Network/SM_OperationsManager.h \
     API/Headers/GDrive/Network/SM_Queries.h \
     API/Headers/GDrive/Network/SM_ResManager.h \
-    API/Headers/GDrive/Network/SM_UploadManager.h \
+    API/Headers/GDrive/Network/SM_UploadFileManager.h \
+    API/Headers/GDrive/Network/SM_DownloadFileManager.h \
     API/Headers/GDrive/Parsers/SM_JSONParser.h \
     API/Headers/GDrive/Parsers/SM_XMLHandler.h \
     API/Headers/GDrive/Parsers/SM_XMLParser.h \
@@ -103,30 +117,18 @@ HEADERS  += \
     API/Headers/GDrive/Share/SM_Debug.h \
     API/Headers/GDrive/Share/SM_Defs.h \
     API/Headers/GDrive/Share/SM_Enums.h \
-    API/Headers/GDrive/Share/SM_Registration.h \
-    API/Headers/GDrive/Share/SM_Singleton.h \
-    API/Headers/Dropbox/SM_dropbox.h \
-    API/Headers/Dropbox/SM_dropbox_account.h \
-    API/Headers/Dropbox/SM_dropbox_deltaresponse.h \
-    API/Headers/Dropbox/SM_dropbox_file.h \
-    API/Headers/Dropbox/SM_dropbox_fileinfo.h \
-    API/Headers/Dropbox/SM_dropbox_global.h \
-    API/Headers/Dropbox/SM_dropbox_json.h \
-    API/Headers/Dropbox/SM_qdropbox.h \
-    API/Tests/keys.hpp \
-    API/Tests/qtdropboxtest.h
->>>>>>> gdrive-engine
+    API/Headers/GDrive/Share/SM_TSingleton_Item.h
 
-FORMS    += mainwindow.ui \
-    API/Headers/GDrive/GUI/Forms/AdditionalFolders.ui \
-    API/Headers/GDrive/GUI/Forms/AuthDialog.ui \
-    API/Headers/GDrive/GUI/Forms/CreateFolderDialog.ui \
-    API/Headers/GDrive/GUI/Forms/DriveTree.ui \
-    API/Headers/GDrive/GUI/Forms/FilePanel.ui \
-    API/Headers/GDrive/GUI/Forms/MainWindow.ui \
-    API/Headers/GDrive/GUI/Forms/ProgressBarDialog.ui \
-    API/Headers/GDrive/GUI/Forms/SettingsDialog.ui \
-    API/Headers/GDrive/GUI/Forms/ShareDialog.ui
+FORMS += \
+    API/Headers/GDrive/GUI/Forms/SM_AuthDialog.ui \
+    API/Headers/GDrive/GUI/Forms/SM_CreateFolderDialog.ui \
+    API/Headers/GDrive/GUI/Forms/SM_FilePanel.ui \
+    API/Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.ui \
+    API/Headers/GDrive/GUI/Forms/SM_ProgressBarDialog.ui \
+    API/Headers/GDrive/GUI/Forms/SM_SettingsDialog.ui \
+    API/Headers/GDrive/GUI/Forms/SM_ShareDialog.ui
 
-OTHER_FILES += \
-    API/Headers/GDrive/Images/PLACEHOLDER
+RESOURCES += resource.qrc
+
+DISTFILES += \
+    syncme.rc

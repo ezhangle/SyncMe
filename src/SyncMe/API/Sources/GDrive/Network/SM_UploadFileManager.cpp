@@ -1,0 +1,4 @@
+#ifndef SM_UPLOADMANAGER_H
+#define SM_UPLOADMANAGER_H
+
+#endif // SM_UPLOADMANAGER_H
