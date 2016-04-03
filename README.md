@@ -24,9 +24,9 @@ Creating a new folder (Pre-release 0.2)
 
 ## Dependencies
 
-`g++ >= 4.8`
-`qt >= 5`
-`openssl`
+`g++ >= 4.8`<br>
+`qt >= 5`<br>
+`openssl`<br>
 
 ## Building
 
