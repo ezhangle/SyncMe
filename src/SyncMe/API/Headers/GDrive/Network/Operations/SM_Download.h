@@ -1,4 +1,13 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#ifndef DOWNLOAD_H
+#define DOWNLOAD_H
 
-#endif // SM_ITEMINFO_H
+#include <QNetworkAccessManager>
+
+class SM_Download : public QNetworkAccessManager
+{
+    Q_OBJECT
+public:
+    explicit SM_Download(QObject *parent = 0);
+};
+
+#endif // DOWNLOAD_H
