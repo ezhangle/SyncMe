@@ -1,7 +1,12 @@
 language: cpp
 compiler:
   - gcc
-
+  
+# Whitelist
+branches:
+  only:
+    - master
+    
 before_install:
   - if [ "$CXX" = "g++" ]; then sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y; fi
   - if [ "$CXX" = "g++" ]; then sudo add-apt-repository ppa:beineri/opt-qt542 -y; fi
