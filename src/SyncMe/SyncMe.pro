@@ -10,6 +10,13 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets webkitwidgets
 
 CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT
 
+QMAKE_CXXFLAGS += -O3
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+QMAKE_LFLAGS += -fprofile-arcs -ftest-coverage
+
+LIBS += \
+	-lgcov
+
 # Icono en Windows
 #ifdef Q_OS_WIN32
 RC_FILE = syncme.rc
