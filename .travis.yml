@@ -23,7 +23,6 @@ before_install:
 
 script:
   - cd SyncMe/src/SyncMe
-  - qmake -v
   - qmake
   - make
   - sudo make install
