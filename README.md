@@ -1,5 +1,5 @@
 # SyncMe
-
+[![SyncMe Logo](https://syncme.files.wordpress.com/2016/04/header.png?w=624)](https://syncme.wordpress.com/)
 [![Build Status](https://travis-ci.org/AdrianBZG/SyncMe.svg?branch=master)](https://travis-ci.org/AdrianBZG/SyncMe)
 
 SyncMe is a cross-platform application written in Qt5 and C++ with the main goal of unify the synchronization of Dropbox and Google Drive platforms into a single application, allowing you to manage all your files easily.
