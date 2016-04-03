@@ -10,6 +10,7 @@ before_install:
   - if [ "$CXX" = "g++" ]; then sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50; fi
   - if [ "$CXX" = "g++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 50; fi
   - if [ "$CXX" = "g++" ]; then sudo apt-get install libc6-i386 qt54tools qt54svg qt54webkit; fi
+  - pip install coveralls --use-wheel
   - $CC --version
   - which $CC
   - export CC=`which $CC`
@@ -26,3 +27,6 @@ script:
   - qmake
   - make
   - sudo make install
+
+after_success:
+  - coveralls
