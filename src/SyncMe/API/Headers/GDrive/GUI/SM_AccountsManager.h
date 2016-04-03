@@ -1,4 +1,10 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#ifndef ACCOUNTSMANAGER_H
+#define ACCOUNTSMANAGER_H
 
-#endif // SM_ITEMINFO_H
+class SM_AccountsManager
+{
+public:
+    SM_AccountsManager();
+};
+
+#endif // ACCOUNTSMANAGER_H
