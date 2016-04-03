@@ -10,7 +10,7 @@ Please note that development is very early on and the project is not ready to us
 
 ## Screenshots
 
-<center>![Initial screen (Pre-release 0.2)](http://i.imgur.com/ETZnvbq.png?1 "Initial screen (Pre-release 0.2)")</center>
+<center>![Initial screen (Pre-release 0.2)](http://i.imgur.com/ETZnvbq.png?1 "Initial screen (Pre-release 0.2)")</center><br>
 Initial screen (Pre-release 0.2)
 
 <center>![Main window (Pre-release 0.2)](http://i.imgur.com/bigsD2c.png?1 "Main window (Pre-release 0.2)")</center>
