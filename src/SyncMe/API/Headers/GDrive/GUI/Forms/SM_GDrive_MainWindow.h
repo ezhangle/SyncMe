@@ -1,4 +1,43 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
-#endif // SM_ITEMINFO_H
+#include <QMainWindow>
+#include "share/SM_TSingleton_Item.h"
+#include "network/SM_Queries.h"
+#include "network/SM_Auth.h"
+
+namespace Ui
+{
+class MainWindow;
+}
+
+class SM_DriveEngine;
+
+typedef SM_TSingleton_Item<Ui::MainWindow> SUi;
+
+class SM_GDrive_MainWindow : public QMainWindow
+{
+    Q_OBJECT
+public:
+    explicit SM_GDrive_MainWindow(QWidget *parent = 0);
+    ~SM_GDrive_MainWindow();
+
+public:
+    void init(void);
+
+private:
+    void setConnections(void);
+
+private slots:
+    void slotAccessTokenRequired(void);
+    void slotAccountInfoReadyToUse(void);
+    void slotAuthDialog(void);
+    void slotColaboraDialog(void);
+    void slotAuthResponse(const QString &accessToken);
+    void slotTokens(const QString &accessToken, const QString &refreshToken);
+
+private:
+    SM_Auth *auth;
+};
+
+#endif // MAINWINDOW_H
