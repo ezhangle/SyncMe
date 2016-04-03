@@ -1,4 +1,11 @@
-#ifndef SM_ENUMS_H
-#define SM_ENUMS_H
+#ifndef ENUMS_H
+#define ENUMS_H
 
-#endif // SM_ENUMS_H
+enum SM_GUI_EPanels
+{
+    ELeft,
+    ERight,
+    EPanelsCount
+};
+
+#endif // ENUMS_H
