@@ -1,6 +1,7 @@
 #include "../../../Headers/GDrive/Core/SM_DriveEngine.h"
 #include "../../../Headers/GDrive/Share/SM_Debug.h"
 #include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "ui_SM_GDrive_MainWindow.h"
 #include <QMessageBox>
 #include <QHBoxLayout>
 #include <QSplitter>

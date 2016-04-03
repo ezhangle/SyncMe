@@ -1,7 +1,7 @@
 #ifndef DELETE_H
 #define DELETE_H
 
-#include "../../Network/SM_NetworkManager.h"
+#include "../SM_NetworkManager.h"
 #include "SM_Operation.h"
 #include "../../GUI/SM_Items.h"
 

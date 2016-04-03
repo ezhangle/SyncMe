@@ -2,6 +2,7 @@
 //#include "ui_filepanel.h"
 #include "../../../../Headers/GDrive/Share/SM_Defs.h"
 #include "../../../../Headers/GDrive/Share/SM_Debug.h"
+#include "ui_SM_FilePanel.h"
 #include <QApplication>
 
 SM_FilePanel::SM_FilePanel(int pn, QWidget *parent) :

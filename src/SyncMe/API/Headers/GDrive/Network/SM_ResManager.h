@@ -2,7 +2,7 @@
 #define RESMANAGER_H
 
 #include "../Share/SM_Defs.h"
-#include "../Network/SM_DownloadFileManager.h"
+#include "SM_DownloadFileManager.h"
 
 class SM_ResManager: public SM_DownloadFileManager
 {

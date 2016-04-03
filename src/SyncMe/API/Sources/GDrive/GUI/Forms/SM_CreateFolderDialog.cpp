@@ -1,5 +1,5 @@
 #include "../../../../Headers/GDrive/GUI/Forms/SM_CreateFolderDialog.h"
-//#include "ui_createfolderdialog.h"
+#include "ui_SM_CreateFolderDialog.h"
 
 SM_CreateFolderDialog::SM_CreateFolderDialog(QWidget *parent) :
     QDialog(parent),

@@ -1,4 +1,5 @@
 #include "../../../../Headers/GDrive/GUI/Forms/SM_SettingsDialog.h"
+#include "ui_SM_SettingsDialog.h"
 #include <QFileDialog>
 #include <QDir>
 

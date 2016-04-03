@@ -1,12 +1,12 @@
 #ifndef OPERATIONSMANAGER_H
 #define OPERATIONSMANAGER_H
 
-#include "../../Network/SM_NetworkManager.h"
+#include "../SM_NetworkManager.h"
 #include "../../GUI/SM_Items.h"
 #include "../../Settings/SM_AccountInfo.h"
 #include "../../Share/SM_TSingleton_Item.h"
 #include "../../Share/SM_Defs.h"
-#include "../../Network/SM_Queries.h"
+#include "../SM_Queries.h"
 #include "../../GUI/Forms/SM_CreateFolderDialog.h"
 #include "SM_Copy.h"
 #include "SM_Delete.h"

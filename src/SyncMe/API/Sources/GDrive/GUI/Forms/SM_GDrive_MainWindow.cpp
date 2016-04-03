@@ -4,6 +4,7 @@
 #include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 #include "../../../../Headers/GDrive/GUI/Forms/SM_AuthDialog.h"
 #include "../../../../Headers/GDrive/Network/Operations/SM_OperationsManager.h"
+#include "ui_SM_GDrive_MainWindow.h"
 #include <QTextCodec>
 #include <QKeyEvent>
 #include <QToolButton>

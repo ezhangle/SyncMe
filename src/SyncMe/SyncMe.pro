@@ -17,12 +17,12 @@ RC_FILE = syncme.rc
 
 # Icono en MAC OS X
 #ifdef Q_OS_MAC
-ICON = res/SyncMe.icns
+ICON = Resources/SyncMe.icns
 #endif
 
 # Icono en Symbian
 #ifdef Q_OS_SYMBIAN
-ICON = res/SyncMe.svg
+ICON = Resources/SyncMe.svg
 #endif
 
 

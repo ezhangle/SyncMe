@@ -1,7 +1,7 @@
 #ifndef OPERATION_H
 #define OPERATION_H
 
-#include "../../Network/SM_Queries.h"
+#include "../SM_Queries.h"
 
 class SM_Operation
 {

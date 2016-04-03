@@ -3,6 +3,7 @@
 #include "../../../../Headers/GDrive/Share/SM_Debug.h"
 #include "../../../../Headers/GDrive/Share/SM_Defs.h"
 #include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "ui_SM_AuthDialog.h"
 
 SM_AuthDialog::SM_AuthDialog(QWidget *parent) :
     QDialog(parent),
