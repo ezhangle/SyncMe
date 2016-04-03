@@ -24,9 +24,11 @@ Creating a new folder (Pre-release 0.2)
 
 ## Dependencies
 
-`g++ >= 4.8`<br>
-`qt >= 5`<br>
-`openssl`<br>
+| Name         | Version                          |
+|--------------|----------------------------------|
+| Qt           | >= 5.2.0                         |
+| C++ compiler | supporting C++11 (i.e. gcc 4.6+) |
+| openssl      |                                  |
 
 ## Building
 
