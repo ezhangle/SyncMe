@@ -1,4 +1,18 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#ifndef OPERATION_H
+#define OPERATION_H
 
-#endif // SM_ITEMINFO_H
+#include "network/SM_Queries.h"
+
+class SM_Operation
+{
+public:
+    SM_Operation();
+
+public:
+    void updatePanelContent(bool opposite);
+
+protected:
+      SM_Queries queries;
+};
+
+#endif // OPERATION_H
