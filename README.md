@@ -10,17 +10,17 @@ Please note that development is very early on and the project is not ready to us
 
 ## Screenshots
 
+Initial screen (Pre-release 0.2)<br>
 <div style="text-align:center">![Initial screen (Pre-release 0.2)](http://i.imgur.com/ETZnvbq.png?1 "Initial screen (Pre-release 0.2)")</div><br>
-Initial screen (Pre-release 0.2)
 
+Main window (Pre-release 0.2)<br>
 <div style="text-align:center">![Main window (Pre-release 0.2)](http://i.imgur.com/bigsD2c.png?1 "Main window (Pre-release 0.2)")</div><br>
-Main window (Pre-release 0.2)
 
+Connecting to your Google Drive account (Pre-release 0.2)<br>
 <div style="text-align:center">![Connecting to your Google Drive account (Pre-release 0.2)](http://i.imgur.com/7dwgpAl.png?1 "Connecting to your Google Drive account (Pre-release 0.2)")</div><br>
-Connecting to your Google Drive account (Pre-release 0.2)
 
+Creating a new folder (Pre-release 0.2)<br>
 <div style="text-align:center">![Creating a new folder (Pre-release 0.2)](http://i.imgur.com/jUfT2mT.png?1 "Creating a new folder (Pre-release 0.2)")</div><br>
-Creating a new folder (Pre-release 0.2)
 
 ## Dependencies
 
