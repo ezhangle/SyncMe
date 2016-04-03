@@ -15,11 +15,11 @@ before_install:
   - which $CC
   - export CC=`which $CC`
   - QTDIR="/opt/qt54"
+  - PATH="$QTDIR/bin:$PATH"
+  - qt54-env.sh
   - QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
   - QMAKE_LDFLAGS += -fprofile-arcs -ftest-coverage
   - LIBS += -lgcov
-  - PATH="$QTDIR/bin:$PATH"
-  - qt54-env.sh
   - git clone https://github.com/AdrianBZG/SyncMe.git
   - cd SyncMe/src/SyncMe
   - sudo ldconfig
