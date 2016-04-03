@@ -23,7 +23,7 @@ before_install:
   - git clone https://github.com/AdrianBZG/SyncMe.git
   - cd SyncMe/src/SyncMe
   - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -v
-  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -spec -Wall SyncMe.pro
+  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake
   - make
   - sudo make install
   - sudo ldconfig
@@ -34,5 +34,5 @@ script:
   - PATH="$QTDIR/bin:$PATH"
   - qt54-env.sh
   - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -v
-  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake -spec linux-$QtMkspec -Wall src/SyncMe/SyncMe.pro
+  - ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake
   - make
