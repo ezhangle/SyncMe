@@ -1,4 +1,6 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#include "SM_Upload.h"
 
-#endif // SM_ITEMINFO_H
+SM_Upload::SM_Upload(QObject *parent)
+    :QNetworkAccessManager(parent)
+{
+}
