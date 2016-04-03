@@ -26,7 +26,6 @@ script:
   - cd SyncMe/src/SyncMe
   - qmake
   - make
-  - make coverage
   - make check
   - sudo make install
 
