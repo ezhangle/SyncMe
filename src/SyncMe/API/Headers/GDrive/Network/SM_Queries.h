@@ -1,4 +1,30 @@
-#ifndef SM_QUERIES_H
-#define SM_QUERIES_H
+#ifndef QUERIES_H
+#define QUERIES_H
 
-#endif // SM_QUERIES_H
+#include <QObject>
+#include <QUrl>
+#include <QNetworkRequest>
+
+class SM_Queries : public QObject
+{
+     Q_OBJECT
+public:
+    SM_Queries();
+
+public:
+    void userAboutInfo(QString &userInfoQuery, QString &aboutInfoQuery);
+    QByteArray getCopyFileData(const QString &sourceName, const QString &destFolderUrl);
+    QUrl constructCopyFileUrl(const QString &url);
+    void setRawHeader(const QString &accessToken, QNetworkRequest &request);
+    QByteArray getRenameFileData(const QString &newName);
+    QUrl constructRenameFileUrl(const QString &sourceName);
+    QByteArray getCreateFolderData(const QString &name, const QString &folderUrl);
+    QUrl constructCreateFolderUrl(void);
+    QUrl constructDeleteFileUrl(const QString &sourceName);
+    QString construcChildrenUrl(const QString &Id);
+
+private:
+   QString urlStartPart;
+};
+
+#endif // QUERIES_H
