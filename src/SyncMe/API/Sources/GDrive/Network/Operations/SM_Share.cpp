@@ -1,4 +1,12 @@
-#ifndef SM_ITEMINFO_H
-#define SM_ITEMINFO_H
+#include "SM_Share.h"
+#include "share/SM_CommonTools.h"
 
-#endif // SM_ITEMINFO_H
+SM_Share::SM_Share(QObject *parent) :
+    SM_NetworkManager(parent)
+{
+}
+
+void SM_Share::file()
+{
+  SM_CommonTools::msg("Esta funcionalidad no está implementada todavía", "SyncMe: Información");
+}
