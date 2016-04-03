@@ -1,7 +1,7 @@
-#include "SM_Children.h"
-#include "settings/SM_SettingsManager.h"
-#include "parsers/SM_JSONParser.h"
-#include "share/SM_Debug.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Children.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/Parsers/SM_JSONParser.h"
+#include "../../../../Headers/GDrive/Share/SM_Debug.h"
 
 SM_Children::SM_Children(QObject *parent) :
     SM_NetworkManager(parent)

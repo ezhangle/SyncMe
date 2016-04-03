@@ -1,4 +1,4 @@
-#include "SM_Move.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Move.h"
 
 SM_Move::SM_Move(QObject *parent) :
     QObject(parent)

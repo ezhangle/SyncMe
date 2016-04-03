@@ -1,4 +1,4 @@
-#include "SM_AccountsManager.h"
+#include "../../../Headers/GDrive/GUI/SM_AccountsManager.h"
 
 SM_AccountsManager::SM_AccountsManager()
 {

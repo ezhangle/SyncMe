@@ -1,5 +1,5 @@
-#include "SM_ComboBox.h"
-#include "share/SM_Debug.h"
+#include "../../../../Headers/GDrive/GUI/Controls/SM_ComboBox.h"
+#include "../../../../Headers/GDrive/Share/SM_Debug.h"
 
 SM_ComboBox::SM_ComboBox(int w, int h, QWidget *parent):
     QComboBox(parent),

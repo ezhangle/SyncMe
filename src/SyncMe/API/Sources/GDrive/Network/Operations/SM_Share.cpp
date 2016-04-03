@@ -1,5 +1,5 @@
-#include "SM_Share.h"
-#include "share/SM_CommonTools.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Share.h"
+#include "../../../../Headers/GDrive/Share/SM_CommonTools.h"
 
 SM_Share::SM_Share(QObject *parent) :
     SM_NetworkManager(parent)

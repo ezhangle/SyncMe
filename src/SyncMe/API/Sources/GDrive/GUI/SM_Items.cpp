@@ -1,4 +1,4 @@
-#include "SM_Items.h"
+#include "../../../Headers/GDrive/GUI/SM_Items.h"
 #include <QtAlgorithms>
 
 SM_Items::SM_Items()

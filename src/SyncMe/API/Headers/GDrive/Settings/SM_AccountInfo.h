@@ -1,7 +1,7 @@
 #ifndef ABOUTINFO_H
 #define ABOUTINFO_H
 
-#include "network/SM_NetworkManager.h"
+#include "../Network/SM_NetworkManager.h"
 
 class SM_AccountInfo : public SM_NetworkManager
 {

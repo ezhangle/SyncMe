@@ -1,9 +1,9 @@
 #ifndef CHILDREN_H
 #define CHILDREN_H
 
-#include "network/SM_NetworkManager.h"
+#include "../../Network/SM_NetworkManager.h"
 #include "SM_Operation.h"
-#include "gui/SM_Items.h"
+#include "../../GUI/SM_Items.h"
 
 class SM_Children : public SM_NetworkManager,  public SM_Operation
 {

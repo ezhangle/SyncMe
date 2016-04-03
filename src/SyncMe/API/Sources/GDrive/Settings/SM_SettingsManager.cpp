@@ -1,7 +1,7 @@
-#include "SM_SettingsManager.h"
-#include "share/SM_Defs.h"
-#include "share/SM_Enums.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/Share/SM_Defs.h"
+#include "../../../Headers/GDrive/Share/SM_Enums.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 #include <QString>
 #include <QStringList>
 #include <QDir>

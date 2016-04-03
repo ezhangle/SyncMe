@@ -1,8 +1,8 @@
-#include "SM_AuthDialog.h"
-#include "ui_authdialog.h"
-#include "share/SM_Debug.h"
-#include "share/SM_Defs.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/GUI/Forms/SM_AuthDialog.h"
+//#include "ui_authdialog.h"
+#include "../../../../Headers/GDrive/Share/SM_Debug.h"
+#include "../../../../Headers/GDrive/Share/SM_Defs.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 
 SM_AuthDialog::SM_AuthDialog(QWidget *parent) :
     QDialog(parent),

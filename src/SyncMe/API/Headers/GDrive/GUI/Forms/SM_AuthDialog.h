@@ -2,7 +2,7 @@
 #define AUTHDIALOG_H
 
 #include <QDialog>
-#include "network/SM_Auth.h"
+#include "../../Network/SM_Auth.h"
 
 namespace Ui {
 class AuthDialog;

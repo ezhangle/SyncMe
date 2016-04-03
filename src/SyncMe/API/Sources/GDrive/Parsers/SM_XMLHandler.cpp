@@ -1,6 +1,6 @@
-#include "SM_XMLHandler.h"
-#include "share/SM_CommonTools.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Parsers/SM_XMLHandler.h"
+#include "../../../Headers/GDrive/Share/SM_CommonTools.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 
 SM_XMLHandler::SM_XMLHandler():
     itemInfo(new SM_Items),

@@ -1,8 +1,8 @@
-#include "SM_AccountInfo.h"
-#include "share/SM_CommonTools.h"
-#include "parsers/SM_JSONParser.h"
-#include "network/SM_Queries.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Settings/SM_AccountInfo.h"
+#include "../../../Headers/GDrive/Share/SM_CommonTools.h"
+#include "../../../Headers/GDrive/Parsers/SM_JSONParser.h"
+#include "../../../Headers/GDrive/Network/SM_Queries.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 
 SM_AccountInfo::SM_AccountInfo(const QString &uiq, const QString &aiq, const QString &at, const QString &rt) :
     userInfoQuery(uiq),

@@ -1,5 +1,5 @@
-#include "SM_ResManager.h"
-#include "share/SM_CommonTools.h"
+#include "../../../Headers/GDrive/Network/SM_ResManager.h"
+#include "../../../Headers/GDrive/Share/SM_CommonTools.h"
 
 SM_ResManager::SM_ResManager(QObject *parent):
             SM_DownloadFileManager(parent)

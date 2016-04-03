@@ -3,9 +3,9 @@
 
 #include <QObject>
 #include <QXmlAttributes>
-#include "gui/SM_Items.h"
-#include "share/SM_Defs.h"
-#include "network/SM_ResManager.h"
+#include "../GUI/SM_Items.h"
+#include "../Share/SM_Defs.h"
+#include "../Network/SM_ResManager.h"
 
 class SM_XMLHandler : public QObject
 {

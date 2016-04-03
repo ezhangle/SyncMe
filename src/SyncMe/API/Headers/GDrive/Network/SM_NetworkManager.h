@@ -6,7 +6,7 @@
 #include <QNetworkReply>
 #include <QFile>
 #include <QSslError>
-#include "gui/forms/SM_ProgressBarDialog.h"
+#include "../GUI/Forms/SM_ProgressBarDialog.h"
 #include <QFileInfo>
 
 class SM_NetworkManager : public QObject

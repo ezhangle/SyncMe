@@ -1,5 +1,5 @@
-#include "SM_Delete.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Delete.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 
 SM_Delete::SM_Delete(QObject *parent)
     :SM_NetworkManager(parent)

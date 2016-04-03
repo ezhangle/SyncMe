@@ -1,5 +1,5 @@
-#include "SM_Create.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Create.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 
 SM_Create::SM_Create(QObject *parent) :
     SM_NetworkManager(parent)

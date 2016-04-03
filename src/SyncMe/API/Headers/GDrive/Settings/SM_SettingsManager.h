@@ -1,7 +1,7 @@
 #ifndef SETTINGSMANAGER_H
 #define SETTINGSMANAGER_H
 
-#include "settings/SM_AccountInfo.h"
+#include "../Settings/SM_AccountInfo.h"
 #include <QSettings>
 #include <QVariant>
 #include <QMap>

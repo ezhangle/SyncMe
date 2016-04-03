@@ -1,5 +1,5 @@
 #include <QApplication>
-#include "gui/forms/SM_GDrive_MainWindow.h"
+#include "../../../Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.h"
 #include <QDesktopWidget>
 
 int main(int argc, char *argv[])

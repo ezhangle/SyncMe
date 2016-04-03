@@ -1,6 +1,6 @@
-#include "SM_FilesTransferUI.h"
-#include "share/SM_Debug.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/GUI/SM_FilesTransferUI.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 #include <QFileDialog>
 #include <QDir>
 

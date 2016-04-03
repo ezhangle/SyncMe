@@ -2,9 +2,9 @@
 #define CONTENTMANAGER_H
 
 #include <QXmlSimpleReader>
-#include "parsers/SM_XMLParser.h"
-#include "network/SM_NetworkManager.h"
-#include "network/operations/SM_OperationsManager.h"
+#include "../Parsers/SM_XMLParser.h"
+#include "../Network/SM_NetworkManager.h"
+#include "../Network/Operations/SM_OperationsManager.h"
 
 class SM_ContentManager : public SM_NetworkManager
 {

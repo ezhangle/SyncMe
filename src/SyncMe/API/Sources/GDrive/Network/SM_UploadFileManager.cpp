@@ -1,5 +1,5 @@
-#include "SM_UploadFileManager.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/Network/SM_UploadFileManager.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 
 SM_UploadFileManager::SM_UploadFileManager(QObject *parent) :
     SM_NetworkManager(parent),

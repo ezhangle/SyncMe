@@ -1,8 +1,8 @@
 #ifndef FILESUI_H
 #define FILESUI_H
 
-#include "core/SM_DriveEngine.h"
-#include "share/SM_Enums.h"
+#include "../Core/SM_DriveEngine.h"
+#include "../Share/SM_Enums.h"
 #include <QLabel>
 
 class SM_ContentUI: public QObject

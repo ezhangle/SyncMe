@@ -1,6 +1,6 @@
-#include "settings/SM_SettingsManager.h"
-#include "SM_ContentUI.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/GUI/SM_ContentUI.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 #include <QDir>
 
 SM_ContentUI::SM_ContentUI(QObject *parent) :

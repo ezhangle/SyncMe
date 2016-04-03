@@ -1,7 +1,7 @@
 #ifndef SPACER_H
 #define SPACER_H
 
-#include "../tools/SM_PainterHelper.h"
+#include "../Tools/SM_PainterHelper.h"
 #include <QFrame>
 
 class SM_Spacer : public QFrame

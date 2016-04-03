@@ -1,6 +1,6 @@
-#include "SM_Queries.h"
-#include "share/SM_CommonTools.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/Network/SM_Queries.h"
+#include "../../../Headers/GDrive/Share/SM_CommonTools.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 #include <QString>
 
 SM_Queries::SM_Queries() :

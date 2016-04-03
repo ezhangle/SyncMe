@@ -1,6 +1,6 @@
-#include "SM_OperationsManager.h"
-#include "core/SM_DriveEngine.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_OperationsManager.h"
+#include "../../../../Headers/GDrive/Core/SM_DriveEngine.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 #include <QStringList>
 
 SM_OperationsManager::SM_OperationsManager(QObject *parent):

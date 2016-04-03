@@ -1,5 +1,4 @@
-#include "SM_ShareDialog.h"
-#include "ui_sharedialog.h"
+#include "../../../../Headers/GDrive/GUI/Forms/SM_ShareDialog.h"
 #include <QUrl>
 #include <QFile>
 

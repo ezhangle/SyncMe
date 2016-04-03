@@ -1,4 +1,4 @@
-#include "SM_Spacer.h"
+#include "../../../../Headers/GDrive/GUI/Controls/SM_Spacer.h"
 
 SM_Spacer::SM_Spacer(QWidget *parent, const QString &styleSheet, bool frame) :
     QFrame(parent),

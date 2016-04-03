@@ -1,6 +1,6 @@
-#include "SM_Auth.h"
-#include "parsers/SM_JSONParser.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Network/SM_Auth.h"
+#include "../../../Headers/GDrive/Parsers/SM_JSONParser.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 #include <QUrlQuery>
 
 

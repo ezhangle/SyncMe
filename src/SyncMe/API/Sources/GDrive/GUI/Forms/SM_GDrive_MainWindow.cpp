@@ -1,10 +1,9 @@
-#include "SM_GDrive_MainWindow.h"
-#include "ui_mainwindow.h"
-#include "core/SM_DriveEngine.h"
-#include "share/SM_Debug.h"
-#include "settings/SM_SettingsManager.h"
-#include "gui/forms/SM_AuthDialog.h"
-#include "network/operations/SM_OperationsManager.h"
+#include "../../../../Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.h"
+#include "../../../../Headers/GDrive/Core/SM_DriveEngine.h"
+#include "../../../../Headers/GDrive/Share/SM_Debug.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/GUI/Forms/SM_AuthDialog.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_OperationsManager.h"
 #include <QTextCodec>
 #include <QKeyEvent>
 #include <QToolButton>

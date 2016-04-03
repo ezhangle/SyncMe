@@ -1,8 +1,8 @@
 #ifndef SHARE_H
 #define SHARE_H
 
-#include "network/SM_NetworkManager.h"
-#include "gui/SM_Items.h"
+#include "../../Network/SM_NetworkManager.h"
+#include "../../GUI/SM_Items.h"
 
 class SM_Share : public SM_NetworkManager
 {

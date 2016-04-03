@@ -1,12 +1,11 @@
-#include "SM_CommonTools.h"
-#include "gui/forms/SM_GDrive_MainWindow.h"
-#include "ui_mainwindow.h"
-#include "share/SM_Defs.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/Share/SM_CommonTools.h"
+#include "../../../Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.h"
+#include "../../../Headers/GDrive/Share/SM_Defs.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 #include <QMessageBox>
 #include <QFile>
 #include <QFileInfo>
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 
 void SM_CommonTools::setHeader(const QString &accessToken, QNetworkRequest &request)
 {

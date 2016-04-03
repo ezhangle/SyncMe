@@ -1,5 +1,5 @@
-#include "SM_JSONParser.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Parsers/SM_JSONParser.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 #include <QRegExp>
 #include <QString>
 #include <QStringList>

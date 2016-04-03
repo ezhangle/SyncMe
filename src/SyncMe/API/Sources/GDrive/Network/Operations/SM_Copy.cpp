@@ -1,5 +1,5 @@
-#include "SM_Copy.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Copy.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 
 SM_Copy::SM_Copy(QObject *parent) :
     SM_NetworkManager(parent)

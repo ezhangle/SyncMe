@@ -1,5 +1,4 @@
-#include "SM_ProgressBarDialog.h"
-#include "ui_progressbardialog.h"
+#include "../../../../Headers/GDrive/GUI/Forms/SM_ProgressBarDialog.h"
 
 SM_ProgressBarDialog::SM_ProgressBarDialog(QWidget *parent) :
     QDialog(parent),

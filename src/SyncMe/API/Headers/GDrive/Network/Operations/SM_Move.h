@@ -2,8 +2,8 @@
 #define MOVE_H
 
 #include <QObject>
-#include "network/operations/SM_Copy.h"
-#include "network/operations/SM_Delete.h"
+#include "../../Network/Operations/SM_Copy.h"
+#include "../../Network/Operations/SM_Delete.h"
 
 class SM_Move : public QObject
 {

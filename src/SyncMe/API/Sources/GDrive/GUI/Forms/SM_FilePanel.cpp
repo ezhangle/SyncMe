@@ -1,8 +1,8 @@
-#include "SM_FilePanel.h"
-#include "ui_filepanel.h"
-#include "share/SM_Defs.h"
-#include "share/SM_Debug.h"
-#include  <QApplication>
+#include "../../../../Headers/GDrive/GUI/Forms/SM_FilePanel.h"
+//#include "ui_filepanel.h"
+#include "../../../../Headers/GDrive/Share/SM_Defs.h"
+#include "../../../../Headers/GDrive/Share/SM_Debug.h"
+#include <QApplication>
 
 SM_FilePanel::SM_FilePanel(int pn, QWidget *parent) :
     QWidget(parent),

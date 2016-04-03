@@ -1,5 +1,5 @@
-#include "SM_Rename.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Rename.h"
+#include "../../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 
 SM_Rename::SM_Rename(QObject *parent) :
     SM_NetworkManager(parent)

@@ -4,8 +4,8 @@
 #include <QWidget>
 #include <QTreeWidget>
 #include <QLabel>
-#include "gui/controls/SM_ToolBar.h"
-#include "gui/controls/SM_ComboBox.h"
+#include "../../GUI/Controls/SM_ToolBar.h"
+#include "../../GUI/Controls/SM_ComboBox.h"
 
 namespace Ui {
 class FilePanel;

@@ -1,6 +1,6 @@
-#include "SM_Operation.h"
-#include "core/SM_DriveEngine.h"
-#include "network/SM_ContentManager.h"
+#include "../../../../Headers/GDrive/Network/Operations/SM_Operation.h"
+#include "../../../../Headers/GDrive/Core/SM_DriveEngine.h"
+#include "../../../../Headers/GDrive/Network/SM_ContentManager.h"
 
 SM_Operation::SM_Operation()
 {

@@ -2,16 +2,16 @@
 #define DRIVEENGINE_H
 
 #include <QTreeWidgetItem>
-#include "network/SM_DownloadFileManager.h"
-#include "network/SM_UploadFileManager.h"
-#include "network/SM_ContentManager.h"
-#include "gui/forms/SM_GDrive_MainWindow.h"
-#include "ui_mainwindow.h"
-#include "gui/SM_FilesTransferUI.h"
-#include "gui/SM_ContentUI.h"
-#include "gui/SM_CheckUI.h"
-#include "share/SM_Enums.h"
-#include "gui/forms/SM_FilePanel.h"
+#include "../Network/SM_DownloadFileManager.h"
+#include "../Network/SM_UploadFileManager.h"
+#include "../Network/SM_ContentManager.h"
+#include "../GUI/Forms/SM_GDrive_MainWindow.h"
+//#include "ui_mainwindow.h"
+#include "../GUI/SM_FilesTransferUI.h"
+#include "../GUI/SM_ContentUI.h"
+#include "../GUI/SM_CheckUI.h"
+#include "../Share/SM_Enums.h"
+#include "../GUI/Forms/SM_FilePanel.h"
 
 class SM_FilesTransferUI;
 class SM_ContentUI;

@@ -1,4 +1,4 @@
-#include "SM_PainterHelper.h"
+#include "../../../../Headers/GDrive/GUI/Tools/SM_PainterHelper.h"
 
 SM_PainterHelper::SM_PainterHelper(QPaintDevice *device) :
     QPainter(device)

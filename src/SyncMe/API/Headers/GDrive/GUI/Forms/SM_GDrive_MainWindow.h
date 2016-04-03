@@ -2,9 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "share/SM_TSingleton_Item.h"
-#include "network/SM_Queries.h"
-#include "network/SM_Auth.h"
+#include "../../Share/SM_TSingleton_Item.h"
+#include "../../Network/SM_Queries.h"
+#include "../../Network/SM_Auth.h"
 
 namespace Ui
 {

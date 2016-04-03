@@ -1,8 +1,7 @@
-#include "SM_DownloadFileManager.h"
-#include "gui/forms/SM_GDrive_MainWindow.h"
-#include "settings/SM_SettingsManager.h"
-#include "share/SM_Debug.h"
-#include "ui_mainwindow.h"
+#include "../../../Headers/GDrive/Network/SM_DownloadFileManager.h"
+#include "../../../Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 
 SM_DownloadFileManager::SM_DownloadFileManager(QObject *parent) :
     SM_NetworkManager(parent)

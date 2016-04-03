@@ -1,20 +1,20 @@
 #ifndef OPERATIONSMANAGER_H
 #define OPERATIONSMANAGER_H
 
-#include "network/SM_NetworkManager.h"
-#include "gui/SM_Items.h"
-#include "settings/SM_AccountInfo.h"
-#include "share/SM_TSingleton_Item.h"
-#include "share/SM_Defs.h"
-#include "network/SM_Queries.h"
-#include "gui/forms/SM_CreateFolderDialog.h"
-#include "network/operations/SM_Copy.h"
-#include "network/operations/SM_Delete.h"
-#include "network/operations/SM_Move.h"
-#include "network/operations/SM_Create.h"
-#include "network/operations/SM_Rename.h"
-#include "network/operations/SM_Share.h"
-#include "network/operations/SM_Children.h"
+#include "../../Network/SM_NetworkManager.h"
+#include "../../GUI/SM_Items.h"
+#include "../../Settings/SM_AccountInfo.h"
+#include "../../Share/SM_TSingleton_Item.h"
+#include "../../Share/SM_Defs.h"
+#include "../../Network/SM_Queries.h"
+#include "../../GUI/Forms/SM_CreateFolderDialog.h"
+#include "SM_Copy.h"
+#include "SM_Delete.h"
+#include "SM_Move.h"
+#include "SM_Create.h"
+#include "SM_Rename.h"
+#include "SM_Share.h"
+#include "SM_Children.h"
 
 class SM_OperationsManager : public SM_NetworkManager
 {

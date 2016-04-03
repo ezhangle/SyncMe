@@ -4,8 +4,8 @@
 #include <QVariant>
 #include <QTreeWidgetItem>
 #include <QDateTime>
-#include "share/SM_Defs.h"
-#include "share/SM_Debug.h"
+#include "../Share/SM_Defs.h"
+#include "../Share/SM_Debug.h"
 
 class SM_Items
 {

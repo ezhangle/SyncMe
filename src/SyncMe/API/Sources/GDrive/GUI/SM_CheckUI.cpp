@@ -1,11 +1,10 @@
-#include "SM_CheckUI.h"
-#include "settings/SM_SettingsManager.h"
+#include "../../../Headers/GDrive/GUI/SM_CheckUI.h"
+#include "../../../Headers/GDrive/Settings/SM_SettingsManager.h"
 #include <QMessageBox>
-#include "gui/forms/SM_SettingsDialog.h"
-#include "share/SM_Defs.h"
-#include "gui/forms/SM_GDrive_MainWindow.h"
-#include "ui_mainwindow.h"
-#include "core/SM_DriveEngine.h"
+#include "../../../Headers/GDrive/GUI/Forms/SM_SettingsDialog.h"
+#include "../../../Headers/GDrive/Share/SM_Defs.h"
+#include "../../../Headers/GDrive/GUI/Forms/SM_GDrive_MainWindow.h"
+#include "../../../Headers/GDrive/Core/SM_DriveEngine.h"
 
 SM_CheckUI::SM_CheckUI(QObject *parent) :
     QObject(parent)

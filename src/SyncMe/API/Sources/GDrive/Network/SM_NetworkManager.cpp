@@ -1,6 +1,6 @@
-#include "SM_NetworkManager.h"
-#include "share/SM_CommonTools.h"
-#include "share/SM_Debug.h"
+#include "../../../Headers/GDrive/Network/SM_NetworkManager.h"
+#include "../../../Headers/GDrive/Share/SM_CommonTools.h"
+#include "../../../Headers/GDrive/Share/SM_Debug.h"
 
 SM_NetworkManager::SM_NetworkManager(QObject *parent) :
     QObject(parent),

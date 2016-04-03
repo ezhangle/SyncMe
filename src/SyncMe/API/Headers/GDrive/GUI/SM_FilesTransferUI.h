@@ -1,7 +1,7 @@
 #ifndef FILESTRANSFER_H
 #define FILESTRANSFER_H
 
-#include "core/SM_DriveEngine.h"
+#include "../Core/SM_DriveEngine.h"
 
 class SM_FilesTransferUI : public QObject
 {
